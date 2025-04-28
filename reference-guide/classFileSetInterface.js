@@ -1,0 +1,25 @@
+var classFileSetInterface =
+[
+    [ "FileSetInterface", "classFileSetInterface.html#a08728d0dab2a013804e1169d8e9566f1", null ],
+    [ "~FileSetInterface", "classFileSetInterface.html#a616a0bd9f6586e1edf43f85e2bd9c604", null ],
+    [ "addFileSet", "classFileSetInterface.html#add3b9e567754a276f81bd64e014f865d", null ],
+    [ "addFileSet", "classFileSetInterface.html#a85fb1cb2d307bbf7f6b67f02c81d8126", null ],
+    [ "fileSetExists", "classFileSetInterface.html#a25cd493e9d44b5981bc05de6e46a963a", null ],
+    [ "getAllReferencesToIdInItem", "classFileSetInterface.html#ac0622276c4f34fcb6c65d72e93e5ffda", null ],
+    [ "getDependencies", "classFileSetInterface.html#a16123ffed85d91c7b8998a178eda7f26", null ],
+    [ "getExpressionsInSelectedFileSets", "classFileSetInterface.html#aa8786f592cc00a144f67f8673a3720cf", null ],
+    [ "getFileBuilderInterface", "classFileSetInterface.html#ab61b74f6f8334899ac4a855984477a6a", null ],
+    [ "getFileInterface", "classFileSetInterface.html#a8a9fe23a99a7cdd7e651b3a959d754a9", null ],
+    [ "getGroups", "classFileSetInterface.html#ae5135e44bfb54759c30b79745390dbd3", null ],
+    [ "getIndexedItemName", "classFileSetInterface.html#ac8f2ab25f2350eee1c7572723d400056", null ],
+    [ "getItemIndex", "classFileSetInterface.html#aa6e0b9f8f617d11ce51eede7c18988bc", null ],
+    [ "getItemNames", "classFileSetInterface.html#a334c24f1dcb600e02c45fe77ac1df74c", null ],
+    [ "itemCount", "classFileSetInterface.html#aa8a649d2e4886da85ae8b91f17325d63", null ],
+    [ "itemHasValidName", "classFileSetInterface.html#a47c70541b50a39a7abc9cce0f8902a4e", null ],
+    [ "removeFileSet", "classFileSetInterface.html#a7c3e41e5de1fe3692a02af470fd841b9", null ],
+    [ "setDependencies", "classFileSetInterface.html#a907f514f5a2befd46ebf021efed7e57a", null ],
+    [ "setFileSets", "classFileSetInterface.html#a36defb52ae2adc55bf5e0d4a64ef9839", null ],
+    [ "setGroups", "classFileSetInterface.html#a882a5e76e6c879449a2e43365a41cfd0", null ],
+    [ "setName", "classFileSetInterface.html#abc3ec43d63f7334f7a0a4539dc9f9aa0", null ],
+    [ "validateItems", "classFileSetInterface.html#a0dc6fc1673822601cd67740ed04d8e60", null ]
+];

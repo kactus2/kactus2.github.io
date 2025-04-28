@@ -1,0 +1,25 @@
+var classAdHocConnectionInterface =
+[
+    [ "AdHocConnectionInterface", "classAdHocConnectionInterface.html#ab158a9caa1c1040847b6a343a56ec5cb", null ],
+    [ "~AdHocConnectionInterface", "classAdHocConnectionInterface.html#a0319f2c1045fa8b73557b274055e9a9b", null ],
+    [ "AdHocConnectionInterface", "classAdHocConnectionInterface.html#a17db56f9fb02d517b508bb4826430efd", null ],
+    [ "addAdHocConnection", "classAdHocConnectionInterface.html#a38667c19fc2ccfdcee6018737cbf8507", null ],
+    [ "addHierarchicalAdHocConnection", "classAdHocConnectionInterface.html#ac315b46b1f67782905e36b8fbe133851", null ],
+    [ "adHocConnectionExists", "classAdHocConnectionInterface.html#a17810c90a69772ec872074537b211c0b", null ],
+    [ "getConnectionName", "classAdHocConnectionInterface.html#ac7854912c019d0b5a0e4d0dc53e1579d", null ],
+    [ "getDescription", "classAdHocConnectionInterface.html#aaf54a1d8d5a99a0806467700b3765ff7", null ],
+    [ "getHierarchicalConnectionName", "classAdHocConnectionInterface.html#a55d9264b66512ec7d1c28778063cc1ac", null ],
+    [ "getIndexedItemName", "classAdHocConnectionInterface.html#ac301ccd82c86a3d2ffeaef773a4bf448", null ],
+    [ "getItemIndex", "classAdHocConnectionInterface.html#a483c37f5d3756ae4d274d2d148055d1c", null ],
+    [ "getItemNames", "classAdHocConnectionInterface.html#aa78e6532d9b3bf5843a039ed27ca5f13", null ],
+    [ "itemCount", "classAdHocConnectionInterface.html#af6c5a28c91225258d1df3a53cef01529", null ],
+    [ "itemHasValidName", "classAdHocConnectionInterface.html#ae0f9a26f3b74f03d02e1c3a5a29aa1a9", null ],
+    [ "operator=", "classAdHocConnectionInterface.html#af389784d48f207094bca651af2201168", null ],
+    [ "removeAdHocConnection", "classAdHocConnectionInterface.html#ae205c22d12f6c5581f6edf6b7e396ea8", null ],
+    [ "removeInstanceAdHocConnections", "classAdHocConnectionInterface.html#a3b3948a386cad4add004cb05cc696a31", null ],
+    [ "renameComponentReferences", "classAdHocConnectionInterface.html#ad47fff6ff0fc4d3ea869b48c996be2f2", null ],
+    [ "setConnections", "classAdHocConnectionInterface.html#a9d04ef36128b9ff9a3700fdf6dd0541f", null ],
+    [ "setDescription", "classAdHocConnectionInterface.html#a5730140dac8199b5ffe0fa13e71d3a88", null ],
+    [ "setName", "classAdHocConnectionInterface.html#a70727332e82e2ff518ddc7d3c3e2e3fa", null ],
+    [ "validateItems", "classAdHocConnectionInterface.html#a7c339bf6f864e0f84a99d90304c96229", null ]
+];
