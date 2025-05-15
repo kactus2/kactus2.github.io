@@ -132,8 +132,8 @@ Inheritance diagram for PythonInterpreter:</div>
 Public Slots</h2></td></tr>
 <tr class="memitem:abb41d8ab405629da179f6ad2ae8857aa" id="r_abb41d8ab405629da179f6ad2ae8857aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb41d8ab405629da179f6ad2ae8857aa">executeString</a> (QString const &amp;string)</td></tr>
 <tr class="separator:abb41d8ab405629da179f6ad2ae8857aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeea7dc2a4cdd9d0b57f68edaf4a68336" id="r_aeea7dc2a4cdd9d0b57f68edaf4a68336"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeea7dc2a4cdd9d0b57f68edaf4a68336">runFile</a> (QString const &amp;filePath)</td></tr>
-<tr class="separator:aeea7dc2a4cdd9d0b57f68edaf4a68336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa775c83512592cc4c82007ca0b9efcdb" id="r_aa775c83512592cc4c82007ca0b9efcdb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa775c83512592cc4c82007ca0b9efcdb">runFile</a> (QString const &amp;filePath)</td></tr>
+<tr class="separator:aa775c83512592cc4c82007ca0b9efcdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4ac512dd6dbade1549f46ef94c3ecae" id="r_ad4ac512dd6dbade1549f46ef94c3ecae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4ac512dd6dbade1549f46ef94c3ecae">write</a> (QString const &amp;command) override final</td></tr>
 <tr class="separator:ad4ac512dd6dbade1549f46ef94c3ecae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -382,8 +382,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aeea7dc2a4cdd9d0b57f68edaf4a68336" name="aeea7dc2a4cdd9d0b57f68edaf4a68336"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeea7dc2a4cdd9d0b57f68edaf4a68336">&#9670;&#160;</a></span>runFile</h2>
+<a id="aa775c83512592cc4c82007ca0b9efcdb" name="aa775c83512592cc4c82007ca0b9efcdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa775c83512592cc4c82007ca0b9efcdb">&#9670;&#160;</a></span>runFile</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -392,7 +392,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void PythonInterpreter::runFile </td>
+          <td class="memname">int PythonInterpreter::runFile </td>
           <td>(</td>
           <td class="paramtype">QString const &amp;</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
           <td></td>
@@ -407,10 +407,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Run a script from a given file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>Path to the file to run. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>Path to the file to run.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Return value of the script or 1 if script file couldn't be opened. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="PythonInterpreter_8cpp_source.html#l00205">205</a> of file <a class="el" href="PythonInterpreter_8cpp_source.html">PythonInterpreter.cpp</a>.</p>
 
