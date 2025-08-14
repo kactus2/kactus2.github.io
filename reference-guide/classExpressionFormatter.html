@@ -129,8 +129,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae2ac6cf759ff5856531d345b6b5f7f51" id="r_ae2ac6cf759ff5856531d345b6b5f7f51"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2ac6cf759ff5856531d345b6b5f7f51">format</a> (QString const &amp;expression, QSharedPointer&lt; <a class="el" href="classExpressionParser.html">ExpressionParser</a> &gt; parser)</td></tr>
-<tr class="separator:ae2ac6cf759ff5856531d345b6b5f7f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2632492e6b0425866d76574368dd3a21" id="r_a2632492e6b0425866d76574368dd3a21"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2632492e6b0425866d76574368dd3a21">format</a> (QString const &amp;expression, QSharedPointer&lt; <a class="el" href="classExpressionParser.html">ExpressionParser</a> &gt; parser, bool *expressionIsValid=nullptr)</td></tr>
+<tr class="separator:a2632492e6b0425866d76574368dd3a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Expression formatter. </p>
@@ -180,8 +180,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae2ac6cf759ff5856531d345b6b5f7f51" name="ae2ac6cf759ff5856531d345b6b5f7f51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2ac6cf759ff5856531d345b6b5f7f51">&#9670;&#160;</a></span>format()</h2>
+<a id="a2632492e6b0425866d76574368dd3a21" name="a2632492e6b0425866d76574368dd3a21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2632492e6b0425866d76574368dd3a21">&#9670;&#160;</a></span>format()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,7 +197,12 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">QSharedPointer&lt; <a class="el" href="classExpressionParser.html">ExpressionParser</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>parser</em></span>&#160;)</td>
+          <td class="paramtype">QSharedPointer&lt; <a class="el" href="classExpressionParser.html">ExpressionParser</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>parser</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>expressionIsValid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -206,6 +211,16 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Format an expression to its largest base number.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">expression</td><td>The selected expression. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parser</td><td>The used expression parser. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">expressionIsValid</td><td>Flag for informing of a valid expression.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Formatted expression. </dd></dl>
 
 </div>
 </div>
