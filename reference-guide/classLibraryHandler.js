@@ -29,7 +29,7 @@ var classLibraryHandler =
     [ "onOpenDesign", "classLibraryHandler.html#a155b4726fa2af4e391a3a4f085e3fb5b", null ],
     [ "onOpenMemoryDesign", "classLibraryHandler.html#ab60131a0f698d68ab5de451589a4a003", null ],
     [ "onOpenSWDesign", "classLibraryHandler.html#acdb1bf6709b4a874305125a284af0c34", null ],
-    [ "onOpenSystemDesign", "classLibraryHandler.html#a673cf3421a151db18b0f35386b6c9aef", null ],
+    [ "onOpenSystemDesign", "classLibraryHandler.html#aa66f08349dccdb46722cb2d283d6459b", null ],
     [ "openAbsDef", "classLibraryHandler.html#a53d3a1f64c1eb99425342e78579f2c6e", null ],
     [ "openApiDefinition", "classLibraryHandler.html#ac76a4844ffb5dbf6f493b5a1ca39fe35", null ],
     [ "openBus", "classLibraryHandler.html#abe98d84eb3e083052e46f44dfd39a1e1", null ],
