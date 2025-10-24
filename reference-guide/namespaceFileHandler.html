@@ -123,6 +123,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3aa409d314dac32de77491ce581ceabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1499f4c5377bda04537b5772aa5c9235" id="r_a1499f4c5377bda04537b5772aa5c9235"><td class="memItemLeft" align="right" valign="top">KACTUS2_API QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1499f4c5377bda04537b5772aa5c9235">getFileTypeForSuffix</a> (QMultiMap&lt; QString, QString &gt; const &amp;fileSuffixTable, QString const &amp;suffix)</td></tr>
 <tr class="separator:a1499f4c5377bda04537b5772aa5c9235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27e23fd2c016db51cd23c8f1d01b91b" id="r_af27e23fd2c016db51cd23c8f1d01b91b"><td class="memItemLeft" align="right" valign="top">KACTUS2_API QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af27e23fd2c016db51cd23c8f1d01b91b">getModifiedPathWithExtension</a> (QString const &amp;filePath, QString const &amp;extension)</td></tr>
+<tr class="separator:af27e23fd2c016db51cd23c8f1d01b91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf352150f37f59627cafd923689640fb" id="r_acf352150f37f59627cafd923689640fb"><td class="memItemLeft" align="right" valign="top">KACTUS2_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf352150f37f59627cafd923689640fb">isURI</a> (QString const &amp;uri)</td></tr>
 <tr class="separator:acf352150f37f59627cafd923689640fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e62de5542af018c3b6d7c276ef7a163" id="r_a0e62de5542af018c3b6d7c276ef7a163"><td class="memItemLeft" align="right" valign="top">KACTUS2_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e62de5542af018c3b6d7c276ef7a163">isValidURI</a> (QString const &amp;relativeTo, QString const &amp;ipxactURI)</td></tr>
@@ -217,6 +219,36 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>File type matching the selected extension. </dd></dl>
+
+</div>
+</div>
+<a id="af27e23fd2c016db51cd23c8f1d01b91b" name="af27e23fd2c016db51cd23c8f1d01b91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af27e23fd2c016db51cd23c8f1d01b91b">&#9670;&#160;</a></span>getModifiedPathWithExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KACTUS2_API QString FileHandler::getModifiedPathWithExtension </td>
+          <td>(</td>
+          <td class="paramtype">QString const &amp;</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString const &amp;</td>          <td class="paramname"><span class="paramname"><em>extension</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Modify the selected path to include the selected extension in the end.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>The selected file path. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">extension</td><td>The selected file extension.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The modified file path. </dd></dl>
 
 </div>
 </div>
