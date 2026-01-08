@@ -33,7 +33,8 @@ var NAVTREE =
         [ "Namespace Members", "namespacemembers.html", [
           [ "All", "namespacemembers.html", null ],
           [ "Functions", "namespacemembers_func.html", null ],
-          [ "Variables", "namespacemembers_vars.html", null ]
+          [ "Variables", "namespacemembers_vars.html", null ],
+          [ "Enumerations", "namespacemembers_enum.html", null ]
         ] ]
       ] ],
       [ "Class List", "annotated.html", [
@@ -63,14 +64,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AbstractParameterInterface_8h.html",
-"classAbstractParameterInterface.html#aab46cf34e0fa28dd98bc0c602442f47b",
-"classComponentInstanceInterface.html#ab4a16d432ce8ab5d1a4a9663bd8c3a09",
-"classFileChannel.html#ab7c7c9406dabaa5ea88779ea39910599",
-"classInterconnectionInterface.html#a04ea4d5d45cc43046e10b15fd0fc3419",
-"classMemoryBlockInterface.html#ad126562597f95a48b61f9ca6c8ee85ba",
-"classPluginUtilityAdapter.html#a3fc17eeed90ad7d016b6d3c7168989c9",
-"classPortsInterface.html#ad01102ce6187f6cf97012c741a6b4b46",
-"functions.html"
+"classAbstractParameterInterface.html#aa016ac48af42bcb2195a9e368565339e",
+"classComponentInstanceInterface.html#a676baa3a531e54217f021850eff538f3",
+"classFileBuilderInterface.html#ae80c2d5adacc771bd80e7e1dd1099701",
+"classImportRunner.html#a83d90aace5c573e03f2e0560d518109e",
+"classMasterPortInterface.html#a0ad13473fab9bde3922bad5cd1e92e9a",
+"classParameterCache.html#af35ec37fb96689e7eff3b858e030612e",
+"classPortsInterface.html#a59c753b2bd9431ef96aaf0ac88751e30",
+"classSystemVerilogExpressionParser.html#abbcc7de859130e0710f7615e1952a381",
+"structInterconnectGeneration_1_1InitStruct.html#af36e7fd1978afd5b18f4fce77fdef5be"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -17,6 +17,7 @@ var classPythonAPI =
     [ "createHierarchicalAdHocConnection", "classPythonAPI.html#a9ffbf2f0316715321f09c384d214c1d0", null ],
     [ "createHierarchicalConnection", "classPythonAPI.html#ad5b88413b3192fd5488131e639937a38", null ],
     [ "generate", "classPythonAPI.html#a68b0d100465842caca5f2cd4f9ea7447", null ],
+    [ "generateInterconnect", "classPythonAPI.html#a63c50a92e3b5356c8aef1a8fa61d8e06", null ],
     [ "getActiveLibraryPaths", "classPythonAPI.html#a50d51ea8915f74240807252e04d8b138", null ],
     [ "getAllLibraryPaths", "classPythonAPI.html#acb230e230fb19cd7c5f2e6926d501aa2", null ],
     [ "getBusInterface", "classPythonAPI.html#a47a32689731b3cd970883510ab4d0042", null ],

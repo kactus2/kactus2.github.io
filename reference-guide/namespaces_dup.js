@@ -28,6 +28,7 @@ var namespaces_dup =
       [ "PORT", "namespaceImportColors.html#aadbaa2e5efed16e92b5797c7e6115070", null ],
       [ "VIEWNAME", "namespaceImportColors.html#afb406479ffa59cae78eca2ac483187e1", null ]
     ] ],
+    [ "InterconnectGeneration", "namespaceInterconnectGeneration.html", "namespaceInterconnectGeneration" ],
     [ "ListHelper", "namespaceListHelper.html", [
       [ "itemIndex", "namespaceListHelper.html#ad07741ea0c1e50c7d0e8f5e6a10b804d", null ],
       [ "listNames", "namespaceListHelper.html#a358c07bb5222432acb4330a713ff0150", null ]

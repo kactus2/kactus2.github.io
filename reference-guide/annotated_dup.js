@@ -1,5 +1,16 @@
 var annotated_dup =
 [
+    [ "InterconnectGeneration", "namespaceInterconnectGeneration.html", [
+      [ "AddressPair", "structInterconnectGeneration_1_1AddressPair.html", "structInterconnectGeneration_1_1AddressPair" ],
+      [ "BusInterfaceInfo", "structInterconnectGeneration_1_1BusInterfaceInfo.html", "structInterconnectGeneration_1_1BusInterfaceInfo" ],
+      [ "ConfigJsonParser", "classInterconnectGeneration_1_1ConfigJsonParser.html", "classInterconnectGeneration_1_1ConfigJsonParser" ],
+      [ "ConfigStruct", "structInterconnectGeneration_1_1ConfigStruct.html", "structInterconnectGeneration_1_1ConfigStruct" ],
+      [ "EndpointData", "structInterconnectGeneration_1_1EndpointData.html", "structInterconnectGeneration_1_1EndpointData" ],
+      [ "Generator", "classInterconnectGeneration_1_1Generator.html", "classInterconnectGeneration_1_1Generator" ],
+      [ "InitStruct", "structInterconnectGeneration_1_1InitStruct.html", "structInterconnectGeneration_1_1InitStruct" ],
+      [ "InterconnectRTLWriter", "classInterconnectGeneration_1_1InterconnectRTLWriter.html", "classInterconnectGeneration_1_1InterconnectRTLWriter" ],
+      [ "TargetStruct", "structInterconnectGeneration_1_1TargetStruct.html", "structInterconnectGeneration_1_1TargetStruct" ]
+    ] ],
     [ "Utils", "namespaceUtils.html", [
       [ "FilterOptions", "structUtils_1_1FilterOptions.html", "structUtils_1_1FilterOptions" ],
       [ "FirmnessOptions", "structUtils_1_1FirmnessOptions.html", "structUtils_1_1FirmnessOptions" ],

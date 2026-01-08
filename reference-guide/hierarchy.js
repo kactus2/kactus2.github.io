@@ -2,7 +2,9 @@ var hierarchy =
 [
     [ "AccessPolicyInterface", "classAccessPolicyInterface.html", null ],
     [ "AddressBlockExpressionGatherer", "classAddressBlockExpressionGatherer.html", null ],
+    [ "InterconnectGeneration::AddressPair", "structInterconnectGeneration_1_1AddressPair.html", null ],
     [ "AddressSpaceExpressionGatherer", "classAddressSpaceExpressionGatherer.html", null ],
+    [ "InterconnectGeneration::BusInterfaceInfo", "structInterconnectGeneration_1_1BusInterfaceInfo.html", null ],
     [ "CLIGenerator", "classCLIGenerator.html", null ],
     [ "CommonInterface", "classCommonInterface.html", [
       [ "AbstractionTypeInterface", "classAbstractionTypeInterface.html", null ],
@@ -35,7 +37,10 @@ var hierarchy =
       [ "ResetInterface", "classResetInterface.html", null ],
       [ "TransparentBridgeInterface", "classTransparentBridgeInterface.html", null ]
     ] ],
+    [ "InterconnectGeneration::ConfigJsonParser", "classInterconnectGeneration_1_1ConfigJsonParser.html", null ],
+    [ "InterconnectGeneration::ConfigStruct", "structInterconnectGeneration_1_1ConfigStruct.html", null ],
     [ "DocumentValidator", "classDocumentValidator.html", null ],
+    [ "InterconnectGeneration::EndpointData", "structInterconnectGeneration_1_1EndpointData.html", null ],
     [ "ExpressionFormatter", "classExpressionFormatter.html", null ],
     [ "ExpressionFormatterFactory", "classExpressionFormatterFactory.html", [
       [ "ExpressionFormatterFactoryImplementation", "classExpressionFormatterFactoryImplementation.html", null ]
@@ -59,12 +64,15 @@ var hierarchy =
     [ "FileDependencyDesc", "structFileDependencyDesc.html", null ],
     [ "Utils::FilterOptions", "structUtils_1_1FilterOptions.html", null ],
     [ "Utils::FirmnessOptions", "structUtils_1_1FirmnessOptions.html", null ],
+    [ "InterconnectGeneration::Generator", "classInterconnectGeneration_1_1Generator.html", null ],
     [ "Utils::HierarchyOptions", "structUtils_1_1HierarchyOptions.html", null ],
     [ "Highlighter", "classHighlighter.html", [
       [ "ImportHighlighter", "classImportHighlighter.html", null ]
     ] ],
     [ "HighlightSource", "classHighlightSource.html", null ],
     [ "Utils::ImplementationOptions", "structUtils_1_1ImplementationOptions.html", null ],
+    [ "InterconnectGeneration::InitStruct", "structInterconnectGeneration_1_1InitStruct.html", null ],
+    [ "InterconnectGeneration::InterconnectRTLWriter", "classInterconnectGeneration_1_1InterconnectRTLWriter.html", null ],
     [ "IPlugin", "classIPlugin.html", [
       [ "IGeneratorPlugin", "classIGeneratorPlugin.html", null ],
       [ "ISourceAnalyzerPlugin", "classISourceAnalyzerPlugin.html", null ],
@@ -142,6 +150,7 @@ var hierarchy =
     [ "RegisterFileExpressionsGatherer", "classRegisterFileExpressionsGatherer.html", null ],
     [ "Utils::RevisionOptions", "structUtils_1_1RevisionOptions.html", null ],
     [ "TagManager", "classTagManager.html", null ],
+    [ "InterconnectGeneration::TargetStruct", "structInterconnectGeneration_1_1TargetStruct.html", null ],
     [ "Utils::TypeOptions", "structUtils_1_1TypeOptions.html", null ],
     [ "Utils::ValidityOptions", "structUtils_1_1ValidityOptions.html", null ],
     [ "WriteChannel", "classWriteChannel.html", [

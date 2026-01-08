@@ -13,11 +13,16 @@ var searchData=
   ['busdefinitionvlnvsmatch_10',['busDefinitionVLNVsMatch',['../namespaceBusInterfaceUtilities.html#add5094cc4c2def3e622bf39b3a820e45',1,'BusInterfaceUtilities']]],
   ['buses_5f_11',['buses_',['../structUtils_1_1TypeOptions.html#a8eb44840598f86dfa1db377bbbaf323b',1,'Utils::TypeOptions']]],
   ['businterfaceexists_12',['busInterfaceExists',['../classBusInterfaceInterface.html#a7123473c8e972a2fb350469f99c5777e',1,'BusInterfaceInterface']]],
-  ['businterfaceinterface_13',['BusInterfaceInterface',['../classBusInterfaceInterface.html',1,'BusInterfaceInterface'],['../classBusInterfaceInterface.html#abc647297a9334d0a55e4d2e2a8e06574',1,'BusInterfaceInterface::BusInterfaceInterface(QSharedPointer&lt; BusInterfaceValidator &gt; busValidator, QSharedPointer&lt; ExpressionParser &gt; expressionParser, QSharedPointer&lt; ExpressionFormatter &gt; expressionFormatter)'],['../classBusInterfaceInterface.html#aa092e2150211c09c7b49c367268617a4',1,'BusInterfaceInterface::BusInterfaceInterface(const BusInterfaceInterface &amp;other)=delete']]],
-  ['businterfaceinterface_2eh_14',['BusInterfaceInterface.h',['../BusInterfaceInterface_8h.html',1,'']]],
-  ['businterfaceinterfacefactory_15',['BusInterfaceInterfaceFactory',['../namespaceBusInterfaceInterfaceFactory.html',1,'']]],
-  ['businterfaceinterfacefactory_2eh_16',['BusInterfaceInterfaceFactory.h',['../BusInterfaceInterfaceFactory_8h.html',1,'']]],
-  ['businterfaceinterfacefactory_3a_3adetails_17',['Details',['../namespaceBusInterfaceInterfaceFactory_1_1Details.html',1,'BusInterfaceInterfaceFactory']]],
-  ['businterfaceutilities_18',['BusInterfaceUtilities',['../namespaceBusInterfaceUtilities.html',1,'']]],
-  ['businterfaceutilities_2eh_19',['BusInterfaceUtilities.h',['../BusInterfaceUtilities_8h.html',1,'']]]
+  ['businterfaceinfo_13',['BusInterfaceInfo',['../structInterconnectGeneration_1_1BusInterfaceInfo.html',1,'InterconnectGeneration']]],
+  ['businterfaceinterface_14',['BusInterfaceInterface',['../classBusInterfaceInterface.html',1,'BusInterfaceInterface'],['../classBusInterfaceInterface.html#abc647297a9334d0a55e4d2e2a8e06574',1,'BusInterfaceInterface::BusInterfaceInterface(QSharedPointer&lt; BusInterfaceValidator &gt; busValidator, QSharedPointer&lt; ExpressionParser &gt; expressionParser, QSharedPointer&lt; ExpressionFormatter &gt; expressionFormatter)'],['../classBusInterfaceInterface.html#aa092e2150211c09c7b49c367268617a4',1,'BusInterfaceInterface::BusInterfaceInterface(const BusInterfaceInterface &amp;other)=delete']]],
+  ['businterfaceinterface_2eh_15',['BusInterfaceInterface.h',['../BusInterfaceInterface_8h.html',1,'']]],
+  ['businterfaceinterfacefactory_16',['BusInterfaceInterfaceFactory',['../namespaceBusInterfaceInterfaceFactory.html',1,'']]],
+  ['businterfaceinterfacefactory_2eh_17',['BusInterfaceInterfaceFactory.h',['../BusInterfaceInterfaceFactory_8h.html',1,'']]],
+  ['businterfaceinterfacefactory_3a_3adetails_18',['Details',['../namespaceBusInterfaceInterfaceFactory_1_1Details.html',1,'BusInterfaceInterfaceFactory']]],
+  ['businterfaceutilities_19',['BusInterfaceUtilities',['../namespaceBusInterfaceUtilities.html',1,'']]],
+  ['businterfaceutilities_2eh_20',['BusInterfaceUtilities.h',['../BusInterfaceUtilities_8h.html',1,'']]],
+  ['bustype_21',['BusType',['../namespaceInterconnectGeneration.html#a990c0a3012769692c65103d6d3c32e68',1,'InterconnectGeneration']]],
+  ['bustype_22',['busType',['../structInterconnectGeneration_1_1ConfigStruct.html#a2bf1d03d94dcc89cbacb8dc10084e5d7',1,'InterconnectGeneration::ConfigStruct']]],
+  ['bustypetostr_23',['busTypeToStr',['../classInterconnectGeneration_1_1ConfigJsonParser.html#a6427f81be8fcd76fc4f10e2fd76dd598',1,'InterconnectGeneration::ConfigJsonParser']]],
+  ['busvlnv_24',['busVLNV',['../structInterconnectGeneration_1_1ConfigStruct.html#a534daf8540caced5d4e2575f09248374',1,'InterconnectGeneration::ConfigStruct']]]
 ];
