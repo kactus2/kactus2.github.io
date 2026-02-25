@@ -76,6 +76,7 @@ var dir_f3a0803c3f588ecc94a51bb427d54d1e =
     [ "NullChannel.h", "NullChannel_8h.html", "NullChannel_8h" ],
     [ "NullParser.h", "NullParser_8h.html", "NullParser_8h" ],
     [ "ParameterCache.h", "ParameterCache_8h.html", "ParameterCache_8h" ],
+    [ "ParameterConfigurableElementFinder.h", "ParameterConfigurableElementFinder_8h.html", "ParameterConfigurableElementFinder_8h" ],
     [ "ParameterFinder.h", "ParameterFinder_8h.html", "ParameterFinder_8h" ],
     [ "ParameterizableInterface.h", "ParameterizableInterface_8h.html", "ParameterizableInterface_8h" ],
     [ "ParametersInterface.h", "ParametersInterface_8h.html", "ParametersInterface_8h" ],

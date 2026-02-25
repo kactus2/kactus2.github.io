@@ -91,6 +91,7 @@ var annotated_dup =
     [ "NullChannel", "classNullChannel.html", "classNullChannel" ],
     [ "NullParser", "classNullParser.html", "classNullParser" ],
     [ "ParameterCache", "classParameterCache.html", "classParameterCache" ],
+    [ "ParameterConfigurableElementFinder", "classParameterConfigurableElementFinder.html", "classParameterConfigurableElementFinder" ],
     [ "ParameterFinder", "classParameterFinder.html", "classParameterFinder" ],
     [ "ParameterizableInterface", "classParameterizableInterface.html", "classParameterizableInterface" ],
     [ "ParametersInterface", "classParametersInterface.html", "classParametersInterface" ],

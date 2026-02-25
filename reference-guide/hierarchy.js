@@ -106,7 +106,8 @@ var hierarchy =
         ] ]
       ] ],
       [ "ListParameterFinder", "classListParameterFinder.html", [
-        [ "DesignParameterFinder", "classDesignParameterFinder.html", null ]
+        [ "DesignParameterFinder", "classDesignParameterFinder.html", null ],
+        [ "ParameterConfigurableElementFinder", "classParameterConfigurableElementFinder.html", null ]
       ] ],
       [ "MultipleParameterFinder", "classMultipleParameterFinder.html", null ]
     ] ],
