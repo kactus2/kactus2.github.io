@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['column_0',['Column',['../classHierarchyModel.html#a41a21f3b7c3d525efc8350538ac2d234',1,'HierarchyModel']]]
+  ['column_0',['Column',['../classHierarchyModelBase.html#a53168d5df241f229aa7b37769946b43f',1,'HierarchyModelBase']]]
 ];

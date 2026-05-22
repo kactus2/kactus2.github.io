@@ -2,7 +2,7 @@ var searchData=
 [
   ['libraryhandler_0',['LibraryHandler',['../classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545',1,'LibraryHandler']]],
   ['libraryitem_1',['LibraryItem',['../classLibraryItem.html#add885bdeecf5b6065f216aca8029532a',1,'LibraryItem::LibraryItem(QObject *parent)'],['../classLibraryItem.html#a198f427478931d3eabddeddbfe901dfd',1,'LibraryItem::LibraryItem(VLNV const &amp;vlnv, Level level, LibraryItem *parent)']]],
-  ['librarytreemodel_2',['LibraryTreeModel',['../classLibraryTreeModel.html#a1e72bf528ed094f86d4906cfc19a05d5',1,'LibraryTreeModel']]],
+  ['librarymodel_2',['LibraryModel',['../classLibraryModel.html#a0d9ee89f09e570f29f7326d792d51c86',1,'LibraryModel']]],
   ['listcomponentvlnvs_3',['listComponentVLNVs',['../classPythonAPI.html#a681e6bf59e7807b2992d2cd13e5cdc0e',1,'PythonAPI']]],
   ['listnames_4',['listNames',['../namespaceListHelper.html#a358c07bb5222432acb4330a713ff0150',1,'ListHelper']]],
   ['listparameterfinder_5',['ListParameterFinder',['../classListParameterFinder.html#aef4737c7a629b12fd3799136562552cb',1,'ListParameterFinder::ListParameterFinder()'],['../classListParameterFinder.html#ab2c13d0469cbb303f2d0bcb863c838fc',1,'ListParameterFinder::ListParameterFinder(const ListParameterFinder &amp;other)=delete']]],

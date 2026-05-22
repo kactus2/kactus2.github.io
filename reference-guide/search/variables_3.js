@@ -3,7 +3,18 @@ var searchData=
   ['datawidth_0',['dataWidth',['../structInterconnectGeneration_1_1ConfigStruct.html#a9d53be87fceaba667bfc877d22836410',1,'InterconnectGeneration::ConfigStruct']]],
   ['datawidthparamname_1',['dataWidthParamName',['../structInterconnectGeneration_1_1ConfigStruct.html#ab8e47b414e55c45d0e8b3f7e8195fd76',1,'InterconnectGeneration::ConfigStruct']]],
   ['decimal_5fnumber_2',['DECIMAL_NUMBER',['../namespaceSystemVerilogSyntax.html#af3e10f1ddce0ed63ab0890b6d38e84e2',1,'SystemVerilogSyntax']]],
-  ['description_3',['description',['../structFileDependencyDesc.html#a3691f204a01f39f58173f15143812965',1,'FileDependencyDesc']]],
-  ['description_5f_4',['description_',['../structIPlugin_1_1ExternalProgramRequirement.html#a5b515a4b737c24a620ee59a1f230b86c',1,'IPlugin::ExternalProgramRequirement']]],
-  ['designvlnv_5',['designVLNV',['../structInterconnectGeneration_1_1ConfigStruct.html#a26762d829138dd2f051ccb851a27199a',1,'InterconnectGeneration::ConfigStruct']]]
+  ['default_5fwindow_5fbg_3',['DEFAULT_WINDOW_BG',['../namespaceKactusColors.html#ae9f7a7ecba36c682cba4626815a24379',1,'KactusColors']]],
+  ['dependecy_5fadded_4',['DEPENDECY_ADDED',['../namespaceKactusColors.html#a9ca18a081b1d51d1b5b439437e80ae91',1,'KactusColors']]],
+  ['dependecy_5fcoverage_5',['DEPENDECY_COVERAGE',['../namespaceKactusColors.html#a592bc2f4ffc7ae0c7ef59ac6d6764581',1,'KactusColors']]],
+  ['description_6',['description',['../structFileDependencyDesc.html#a3691f204a01f39f58173f15143812965',1,'FileDependencyDesc']]],
+  ['description_5f_7',['description_',['../structIPlugin_1_1ExternalProgramRequirement.html#a5b515a4b737c24a620ee59a1f230b86c',1,'IPlugin::ExternalProgramRequirement']]],
+  ['designvlnv_8',['designVLNV',['../structInterconnectGeneration_1_1ConfigStruct.html#a26762d829138dd2f051ccb851a27199a',1,'InterconnectGeneration::ConfigStruct']]],
+  ['diagram_5fallowed_5finterface_9',['DIAGRAM_ALLOWED_INTERFACE',['../namespaceKactusColors.html#a37971db8006a6191ca4e7fa8f07df11d',1,'KactusColors']]],
+  ['diagram_5fcolumn_5fheader_10',['DIAGRAM_COLUMN_HEADER',['../namespaceKactusColors.html#a4d722e1ff94d67aad090f85437e9d822',1,'KactusColors']]],
+  ['diagram_5fgrid_11',['DIAGRAM_GRID',['../namespaceKactusColors.html#ab15b5d305ca5469b484d10deff3db5da',1,'KactusColors']]],
+  ['diagram_5fselection_12',['DIAGRAM_SELECTION',['../namespaceKactusColors.html#a98594df2533e9502298da6753dca7bfe',1,'KactusColors']]],
+  ['disabled_5ffield_13',['DISABLED_FIELD',['../namespaceKactusColors.html#a7d63c9f2050b8abe79a7988d4e893de4',1,'KactusColors']]],
+  ['disabled_5ftext_14',['DISABLED_TEXT',['../namespaceKactusColors.html#a9663eaf1ddd8126752bfca6ba78e71cd',1,'KactusColors']]],
+  ['dock_5fwidget_5ftitle_5fbg_15',['DOCK_WIDGET_TITLE_BG',['../namespaceKactusColors.html#a3fc6fafb2e5de504b17bfbe59d2b93e1',1,'KactusColors']]],
+  ['draft_5fcomponent_16',['DRAFT_COMPONENT',['../namespaceKactusColors.html#acefdda38e4f60200e4f7980f13634b2c',1,'KactusColors']]]
 ];

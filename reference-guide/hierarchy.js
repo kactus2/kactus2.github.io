@@ -132,8 +132,8 @@ var hierarchy =
     [ "PluginSettingsModel", "classPluginSettingsModel.html", null ],
     [ "PythonAPI", "classPythonAPI.html", null ],
     [ "QAbstractItemModel", null, [
-      [ "HierarchyModel", "classHierarchyModel.html", null ],
-      [ "LibraryTreeModel", "classLibraryTreeModel.html", null ]
+      [ "HierarchyModelBase", "classHierarchyModelBase.html", null ],
+      [ "LibraryModel", "classLibraryModel.html", null ]
     ] ],
     [ "QObject", null, [
       [ "ChannelRelay", "classChannelRelay.html", null ],

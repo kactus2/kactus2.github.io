@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['parameter_0',['PARAMETER',['../namespaceImportColors.html#a47a37d2451396e6e5c31fc55ebeb95fd',1,'ImportColors']]],
-  ['parsedaddresswidth_1',['parsedAddressWidth',['../structInterconnectGeneration_1_1ConfigStruct.html#a7e01ecf8a20d6e2a552df60a9b0fe5f8',1,'InterconnectGeneration::ConfigStruct']]],
-  ['path_2',['path',['../structLibraryLoader_1_1LoadTarget.html#af071c3e27f4e697045bb1eddaf2f7099',1,'LibraryLoader::LoadTarget']]],
-  ['port_3',['PORT',['../namespaceImportColors.html#aadbaa2e5efed16e92b5797c7e6115070',1,'ImportColors']]],
-  ['product_5f_4',['product_',['../structUtils_1_1HierarchyOptions.html#a19f15cdd955a0579680fdcfdb0f7789c',1,'Utils::HierarchyOptions']]]
+  ['name_0',['name',['../structInterconnectGeneration_1_1InitStruct.html#a78da2245100068fd7c0ea58355ded7fc',1,'InterconnectGeneration::InitStruct::name'],['../structInterconnectGeneration_1_1TargetStruct.html#a402cc6c6191ddfad7baaf555a8d2a655',1,'InterconnectGeneration::TargetStruct::name'],['../structInterconnectGeneration_1_1BusInterfaceInfo.html#ad8ca95b94262fed41c205b00620e0268',1,'InterconnectGeneration::BusInterfaceInfo::name']]],
+  ['name_5f_1',['name_',['../structIPlugin_1_1ExternalProgramRequirement.html#a3023ef295ca6a9ed8ae76726ebbf67b6',1,'IPlugin::ExternalProgramRequirement']]]
 ];

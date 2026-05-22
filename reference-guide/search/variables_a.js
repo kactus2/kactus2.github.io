@@ -1,4 +1,22 @@
 var searchData=
 [
-  ['octal_5fnumber_0',['OCTAL_NUMBER',['../namespaceSystemVerilogSyntax.html#a53e76ef00df36bfd3bd1a48f0ce6f72f',1,'SystemVerilogSyntax']]]
+  ['mandatory_5ffield_0',['MANDATORY_FIELD',['../namespaceKactusColors.html#ad2abca825395dd30462d8542144d1623',1,'KactusColors']]],
+  ['master_5finterface_1',['MASTER_INTERFACE',['../namespaceKactusColors.html#a7aaede4d4a2921fdc5f70542d733c581',1,'KactusColors']]],
+  ['math_5ffunction_2',['MATH_FUNCTION',['../namespaceSystemVerilogSyntax.html#ad83b2d343c75ef1f6480f5c6fc91987b',1,'SystemVerilogSyntax']]],
+  ['mem_5fdesigner_5faddr_5fspace_5fconnection_3',['MEM_DESIGNER_ADDR_SPACE_CONNECTION',['../namespaceKactusColors.html#a373efa1ef811a8962af400f542264c85',1,'KactusColors']]],
+  ['mem_5fdesigner_5fconnection_4',['MEM_DESIGNER_CONNECTION',['../namespaceKactusColors.html#ac111af2b2f6b1c342e6f6c587e56695c',1,'KactusColors']]],
+  ['mem_5fdesigner_5flocal_5fmap_5fconnection_5',['MEM_DESIGNER_LOCAL_MAP_CONNECTION',['../namespaceKactusColors.html#a313e120cf59552507d41e7c285b4dd6d',1,'KactusColors']]],
+  ['mem_5fgraph_5fitem_5fborder_6',['MEM_GRAPH_ITEM_BORDER',['../namespaceKactusColors.html#ae3020daf1428b08f95be983a802c92cf',1,'KactusColors']]],
+  ['mem_5fitem_5fextension_7',['MEM_ITEM_EXTENSION',['../namespaceKactusColors.html#af38a0d67e771696d996052ff19090769',1,'KactusColors']]],
+  ['mem_5fmap_5fcolor_8',['MEM_MAP_COLOR',['../namespaceKactusColors.html#a641876610deffa61b3c07e26a3e453df',1,'KactusColors']]],
+  ['memory_5fblock_9',['MEMORY_BLOCK',['../namespaceKactusColors.html#acc01e52e5318afac543744b1405c3496',1,'KactusColors']]],
+  ['memory_5fdesigner_5ftext_10',['MEMORY_DESIGNER_TEXT',['../namespaceKactusColors.html#a20a2d842398072fc94893de2cce97a8c',1,'KactusColors']]],
+  ['mirroredmaster_5finterface_11',['MIRROREDMASTER_INTERFACE',['../namespaceKactusColors.html#a24946abaf879c30e94386de16d917488',1,'KactusColors']]],
+  ['mirroredslave_5finterface_12',['MIRROREDSLAVE_INTERFACE',['../namespaceKactusColors.html#aa7c9d4eb0fd66519204a0ec1e1927a66',1,'KactusColors']]],
+  ['mirroredsystem_5finterface_13',['MIRROREDSYSTEM_INTERFACE',['../namespaceKactusColors.html#afa94f447cc287eaacf3901c8e61b780a',1,'KactusColors']]],
+  ['missing_5fcomponent_14',['MISSING_COMPONENT',['../namespaceKactusColors.html#a994f58b551e6d73695f55b30d180e0e3',1,'KactusColors']]],
+  ['mode_15',['mode',['../structInterconnectGeneration_1_1BusInterfaceInfo.html#a95be3a66a7d16314cd557065a89e1f01',1,'InterconnectGeneration::BusInterfaceInfo']]],
+  ['modelparameter_16',['MODELPARAMETER',['../namespaceKactusColors_1_1Importer.html#a8c1a9405b6e833cdeb6ba08dec02e5d4',1,'KactusColors::Importer']]],
+  ['monitor_5finterface_17',['MONITOR_INTERFACE',['../namespaceKactusColors.html#a099e6584c7ff586ff0409912b358fc9f',1,'KactusColors']]],
+  ['mutable_5f_18',['mutable_',['../structUtils_1_1FirmnessOptions.html#a82bfdc1416428f4fa868b843f79b9c80',1,'Utils::FirmnessOptions']]]
 ];

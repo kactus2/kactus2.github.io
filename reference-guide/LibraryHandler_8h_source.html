@@ -124,258 +124,264 @@ $(function(){initNavTree('LibraryHandler_8h_source.html',''); initResizable(true
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="LibraryInterface_8h.html">LibraryInterface.h</a>&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="LibraryLoader_8h.html">LibraryLoader.h</a>&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="LibraryTreeModel_8h.html">LibraryTreeModel.h</a>&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="hierarchymodel_8h.html">hierarchymodel.h</a>&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="NullChannel_8h.html">NullChannel.h</a>&quot;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="utils_8h.html">utils.h</a>&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="DocumentFileAccess_8h.html">DocumentFileAccess.h</a>&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="DocumentValidator_8h.html">DocumentValidator.h</a>&quot;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;IPXACTmodels/common/Document.h&gt;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;IPXACTmodels/common/TagData.h&gt;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;IPXACTmodels/kactusExtensions/KactusAttribute.h&gt;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;KactusAPI/KactusAPIGlobal.h&gt;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;QStringList&gt;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;QList&gt;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;QSharedPointer&gt;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">class </span><a class="code hl_class" href="classLibraryItem.html">LibraryItem</a>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">class </span><a class="code hl_class" href="classMessageMediator.html">MessageMediator</a>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">//-----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">//-----------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classLibraryHandler.html">   45</a></span><span class="keyword">class </span>KACTUS2_API <a class="code hl_function" href="classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545">LibraryHandler</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> <a class="code hl_class" href="classLibraryInterface.html">LibraryInterface</a></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    Q_OBJECT</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a08fc1fcf79b6d428881812c49a825856">   52</a></span>    <span class="keyword">static</span> <a class="code hl_function" href="classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545">LibraryHandler</a>&amp; <a class="code hl_function" href="classLibraryHandler.html#a08fc1fcf79b6d428881812c49a825856">getInstance</a>();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545">   55</a></span>    <a class="code hl_function" href="classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545">LibraryHandler</a>(<span class="keyword">const</span> <a class="code hl_function" href="classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545">LibraryHandler</a> &amp;other) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aad26326c193def00b05b4b71c78ea535">   58</a></span>    <a class="code hl_function" href="classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545">LibraryHandler</a>&amp; <a class="code hl_function" href="classLibraryHandler.html#aad26326c193def00b05b4b71c78ea535">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545">LibraryHandler</a>&amp; other) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ae344dfa8a2bea96bc8bab3bc79441158">   61</a></span>    <a class="code hl_function" href="classLibraryHandler.html#ae344dfa8a2bea96bc8bab3bc79441158">~LibraryHandler</a>() final = default;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aabf64341c6184433f0b4b291dfb86d1f">   63</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classLibraryHandler.html#aabf64341c6184433f0b4b291dfb86d1f">setOutputChannel</a>(<a class="code hl_class" href="classMessageMediator.html">MessageMediator</a>* messageChannel);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a6aba79451637e9c6ae70a71defeb4ad4">   73</a></span>    QSharedPointer&lt;Document&gt; <a class="code hl_function" href="classLibraryHandler.html#a6aba79451637e9c6ae70a71defeb4ad4">getModel</a>(VLNV const&amp; vlnv) final;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="LibraryModel_8h.html">LibraryModel.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="HierarchyModelBase_8h.html">HierarchyModelBase.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="NullChannel_8h.html">NullChannel.h</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="utils_8h.html">utils.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="DocumentFileAccess_8h.html">DocumentFileAccess.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="DocumentValidator_8h.html">DocumentValidator.h</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;IPXACTmodels/common/Document.h&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;IPXACTmodels/common/TagData.h&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;IPXACTmodels/kactusExtensions/KactusAttribute.h&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;KactusAPI/KactusAPIGlobal.h&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;QStringList&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;QList&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;QSharedPointer&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">class </span><a class="code hl_class" href="classLibraryItem.html">LibraryItem</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">class </span><a class="code hl_class" href="classMessageMediator.html">MessageMediator</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="};">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classLibraryHandler.html">   46</a></span><span class="keyword">class </span>KACTUS2_API <a class="code hl_function" href="classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545">LibraryHandler</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> <a class="code hl_class" href="classLibraryInterface.html">LibraryInterface</a></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    Q_OBJECT</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a08fc1fcf79b6d428881812c49a825856">   53</a></span>    <span class="keyword">static</span> <a class="code hl_function" href="classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545">LibraryHandler</a>&amp; <a class="code hl_function" href="classLibraryHandler.html#a08fc1fcf79b6d428881812c49a825856">getInstance</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545">   56</a></span>    <a class="code hl_function" href="classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545">LibraryHandler</a>(<span class="keyword">const</span> <a class="code hl_function" href="classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545">LibraryHandler</a> &amp;other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aad26326c193def00b05b4b71c78ea535">   59</a></span>    <a class="code hl_function" href="classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545">LibraryHandler</a>&amp; <a class="code hl_function" href="classLibraryHandler.html#aad26326c193def00b05b4b71c78ea535">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classLibraryHandler.html#a380fce4cfe5032accf8a400d6ec72545">LibraryHandler</a>&amp; other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ae344dfa8a2bea96bc8bab3bc79441158">   62</a></span>    <a class="code hl_function" href="classLibraryHandler.html#ae344dfa8a2bea96bc8bab3bc79441158">~LibraryHandler</a>() final = default;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aabf64341c6184433f0b4b291dfb86d1f">   64</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classLibraryHandler.html#aabf64341c6184433f0b4b291dfb86d1f">setOutputChannel</a>(<a class="code hl_class" href="classMessageMediator.html">MessageMediator</a>* messageChannel);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ae608d8da418a40ce3c0d9efde42c2128">   73</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classLibraryHandler.html#ae608d8da418a40ce3c0d9efde42c2128">replaceModel</a>(<a class="code hl_class" href="classLibraryModel.html">LibraryModel</a>* model);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ae96d67b66ca796bbed7f6260d8ebb9ee">   83</a></span>    QSharedPointer&lt;Document const&gt; <a class="code hl_function" href="classLibraryHandler.html#ae96d67b66ca796bbed7f6260d8ebb9ee">getModelReadOnly</a>(VLNV const&amp; vlnv) final;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#af230336bfaf486ecf57aaee762bebe48">   89</a></span>    QList&lt;VLNV&gt; <a class="code hl_function" href="classLibraryHandler.html#af230336bfaf486ecf57aaee762bebe48">getAllVLNVs</a>() const final;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aba6df658b292ed7bfd51b1d8a1001d48">   97</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classLibraryHandler.html#aba6df658b292ed7bfd51b1d8a1001d48">contains</a>(VLNV const&amp; vlnv) const final;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a371b208a60f271911de32c00a6ba5d25">  105</a></span>    const QString <a class="code hl_function" href="classLibraryHandler.html#a371b208a60f271911de32c00a6ba5d25">getPath</a>(VLNV const&amp; vlnv) const final;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aca14b8a89396b00728fac10d6453b0dc">  113</a></span>    QString <a class="code hl_function" href="classLibraryHandler.html#aca14b8a89396b00728fac10d6453b0dc">getDirectoryPath</a>(VLNV const&amp; vlnv) const final;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a5e15ca44c5b2f0092a86eb7d76fc2436">  129</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classLibraryHandler.html#a5e15ca44c5b2f0092a86eb7d76fc2436">writeModelToFile</a>(QString const&amp; path, QSharedPointer&lt;Document&gt; model) final;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ad8019bb6b36e580e4ce707a6cd8bcd95">  142</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classLibraryHandler.html#a5e15ca44c5b2f0092a86eb7d76fc2436">writeModelToFile</a>(QSharedPointer&lt;Document&gt; model) final;</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a260f7d4aa5d03766d8789cec8764af55">  145</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classLibraryHandler.html#a260f7d4aa5d03766d8789cec8764af55">searchForIPXactFiles</a>() final;</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ab70300d468dbf64dd9d3982209ea9d83">  159</a></span>     <span class="keywordtype">void</span> <a class="code hl_function" href="classLibraryHandler.html#ab70300d468dbf64dd9d3982209ea9d83">getNeededVLNVs</a>(VLNV const&amp; vlnv, QList&lt;VLNV&gt;&amp; list) final;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a71f72c510beb81cbf022f59aa30dc414">  170</a></span>     <span class="keywordtype">void</span> <a class="code hl_function" href="classLibraryHandler.html#a71f72c510beb81cbf022f59aa30dc414">getDependencyFiles</a>(VLNV const&amp; vlnv, QStringList&amp; list) final;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span></div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a508d25ef3fd64434462e6b61222ec334">  176</a></span>     <a class="code hl_class" href="classLibraryItem.html">LibraryItem</a> const* <a class="code hl_function" href="classLibraryHandler.html#a508d25ef3fd64434462e6b61222ec334">getTreeRoot</a>() const final;</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ae6ce7b20a14094030235914c80c59d48">  186</a></span>    VLNV::IPXactType <a class="code hl_function" href="classLibraryHandler.html#ae6ce7b20a14094030235914c80c59d48">getDocumentType</a>(VLNV const&amp; vlnv) final;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aba768e6c6cd8d0be5a55f1a024018889">  194</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classLibraryHandler.html#aba768e6c6cd8d0be5a55f1a024018889">referenceCount</a>(VLNV const&amp; vlnv) const final;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a97d795f8cd97d5ba60e2c2aa579e4fa8">   81</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classLibraryHandler.html#a97d795f8cd97d5ba60e2c2aa579e4fa8">replaceHierarchyModel</a>(<a class="code hl_class" href="classHierarchyModelBase.html">HierarchyModelBase</a>* model);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a6aba79451637e9c6ae70a71defeb4ad4">   91</a></span>    QSharedPointer&lt;Document&gt; <a class="code hl_function" href="classLibraryHandler.html#a6aba79451637e9c6ae70a71defeb4ad4">getModel</a>(VLNV const&amp; vlnv) final;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ae96d67b66ca796bbed7f6260d8ebb9ee">  101</a></span>    QSharedPointer&lt;Document const&gt; <a class="code hl_function" href="classLibraryHandler.html#ae96d67b66ca796bbed7f6260d8ebb9ee">getModelReadOnly</a>(VLNV const&amp; vlnv) final;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#af230336bfaf486ecf57aaee762bebe48">  107</a></span>    QList&lt;VLNV&gt; <a class="code hl_function" href="classLibraryHandler.html#af230336bfaf486ecf57aaee762bebe48">getAllVLNVs</a>() const final;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aba6df658b292ed7bfd51b1d8a1001d48">  115</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classLibraryHandler.html#aba6df658b292ed7bfd51b1d8a1001d48">contains</a>(VLNV const&amp; vlnv) const final;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a371b208a60f271911de32c00a6ba5d25">  123</a></span>    const QString <a class="code hl_function" href="classLibraryHandler.html#a371b208a60f271911de32c00a6ba5d25">getPath</a>(VLNV const&amp; vlnv) const final;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aca14b8a89396b00728fac10d6453b0dc">  131</a></span>    QString <a class="code hl_function" href="classLibraryHandler.html#aca14b8a89396b00728fac10d6453b0dc">getDirectoryPath</a>(VLNV const&amp; vlnv) const final;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a5e15ca44c5b2f0092a86eb7d76fc2436">  147</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classLibraryHandler.html#a5e15ca44c5b2f0092a86eb7d76fc2436">writeModelToFile</a>(QString const&amp; path, QSharedPointer&lt;Document&gt; model) final;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ad8019bb6b36e580e4ce707a6cd8bcd95">  160</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classLibraryHandler.html#a5e15ca44c5b2f0092a86eb7d76fc2436">writeModelToFile</a>(QSharedPointer&lt;Document&gt; model) final;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a260f7d4aa5d03766d8789cec8764af55">  163</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classLibraryHandler.html#a260f7d4aa5d03766d8789cec8764af55">searchForIPXactFiles</a>() final;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ab70300d468dbf64dd9d3982209ea9d83">  177</a></span>     <span class="keywordtype">void</span> <a class="code hl_function" href="classLibraryHandler.html#ab70300d468dbf64dd9d3982209ea9d83">getNeededVLNVs</a>(VLNV const&amp; vlnv, QList&lt;VLNV&gt;&amp; list) final;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a71f72c510beb81cbf022f59aa30dc414">  188</a></span>     <span class="keywordtype">void</span> <a class="code hl_function" href="classLibraryHandler.html#a71f72c510beb81cbf022f59aa30dc414">getDependencyFiles</a>(VLNV const&amp; vlnv, QStringList&amp; list) final;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a508d25ef3fd64434462e6b61222ec334">  194</a></span>     <a class="code hl_class" href="classLibraryItem.html">LibraryItem</a> const* <a class="code hl_function" href="classLibraryHandler.html#a508d25ef3fd64434462e6b61222ec334">getTreeRoot</a>() const final;</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span></div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#acef171b6ad316286373c07841c2c7856">  203</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classLibraryHandler.html#acef171b6ad316286373c07841c2c7856">getOwners</a>(QList&lt;VLNV&gt;&amp; list, VLNV const&amp; vlnvToSearch) const final;</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ad98b5ff42406d9f38c95bd240b7cd4d5">  212</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classLibraryHandler.html#ad98b5ff42406d9f38c95bd240b7cd4d5">getChildren</a>(QList&lt;VLNV&gt;&amp; list, VLNV const&amp; vlnvToSearch) const final;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ae6ce7b20a14094030235914c80c59d48">  204</a></span>    VLNV::IPXactType <a class="code hl_function" href="classLibraryHandler.html#ae6ce7b20a14094030235914c80c59d48">getDocumentType</a>(VLNV const&amp; vlnv) final;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aba768e6c6cd8d0be5a55f1a024018889">  212</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classLibraryHandler.html#aba768e6c6cd8d0be5a55f1a024018889">referenceCount</a>(VLNV const&amp; vlnv) const final;</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span></div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a1743eb0cd974e6d2b983628ef4d5fda7">  227</a></span>    VLNV <a class="code hl_function" href="classLibraryHandler.html#a1743eb0cd974e6d2b983628ef4d5fda7">getDesignVLNV</a>(VLNV const&amp; hierarchyRef) final;</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a8b51cedaec22f065bcaa382443192553">  242</a></span>    QSharedPointer&lt;Design&gt; <a class="code hl_function" href="classLibraryHandler.html#a8b51cedaec22f065bcaa382443192553">getDesign</a>(VLNV const&amp; hierarchyRef) final;</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span></div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ae40dce44ac32bb89cb2c4ff32affeadc">  250</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classLibraryHandler.html#ae40dce44ac32bb89cb2c4ff32affeadc">isValid</a>(VLNV const&amp; vlnv) final;</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a10b9f94d6752ad92496cc2a5d1651bac">  252</a></span>    <a class="code hl_class" href="classHierarchyModel.html">HierarchyModel</a>* <a class="code hl_function" href="classLibraryHandler.html#a10b9f94d6752ad92496cc2a5d1651bac">getHierarchyModel</a>();</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a7447b9ce63365b367bd864c2cddb16bd">  254</a></span>    <a class="code hl_class" href="classLibraryTreeModel.html">LibraryTreeModel</a>* <a class="code hl_function" href="classLibraryHandler.html#a7447b9ce63365b367bd864c2cddb16bd">getTreeModel</a>();</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span></div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a53987da3ef68fff62212ca8d5b250e84">  264</a></span>    QVector&lt;QString&gt; <a class="code hl_function" href="classLibraryHandler.html#a53987da3ef68fff62212ca8d5b250e84">findErrorsInDocument</a>(QSharedPointer&lt;Document&gt; document, QString const&amp; path);</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>public slots:</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span></div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aced6b91e460e6d234d5d678d7b9547cb">  273</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#aced6b91e460e6d234d5d678d7b9547cb">onCheckLibraryIntegrity</a>() final;</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a78efdb6c849e4a1542d79ac55c98bb36">  280</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#a78efdb6c849e4a1542d79ac55c98bb36">onEditItem</a>(VLNV const&amp; vlnv) final;</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span></div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a155b4726fa2af4e391a3a4f085e3fb5b">  288</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#a155b4726fa2af4e391a3a4f085e3fb5b">onOpenDesign</a>(VLNV const&amp; vlnv, QString const&amp; viewName) final;</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span></div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ab60131a0f698d68ab5de451589a4a003">  296</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#ab60131a0f698d68ab5de451589a4a003">onOpenMemoryDesign</a>(VLNV const&amp; vlnv, QString const&amp; activeView);</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span></div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#acdb1bf6709b4a874305125a284af0c34">  303</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#acdb1bf6709b4a874305125a284af0c34">onOpenSWDesign</a>(VLNV const&amp; vlnv);</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span></div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aa66f08349dccdb46722cb2d283d6459b">  311</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#aa66f08349dccdb46722cb2d283d6459b">onOpenSystemDesign</a>(VLNV const&amp; vlnv, QString const&amp; activeView);</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span></div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a2e6cd8922dcf6cf77ae985b902f4c320">  322</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#a2e6cd8922dcf6cf77ae985b902f4c320">removeObject</a>(VLNV const&amp; vlnv) final;</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span></div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a0d40e8e889d026d1683d893bb5acc4e6">  331</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#a0d40e8e889d026d1683d893bb5acc4e6">removeObjects</a>(const QList&lt;VLNV&gt;&amp; vlnvList) final;</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span></div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a947267cb5c752bc46500951a23741cb4">  341</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#a947267cb5c752bc46500951a23741cb4">beginSave</a>();</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span></div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a6f0b6606834e940ccb47aefcb5dc241f">  347</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#a6f0b6606834e940ccb47aefcb5dc241f">endSave</a>();</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>signals:</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a46c071a685eadb1c7700bb4c01cc5a61">  352</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a46c071a685eadb1c7700bb4c01cc5a61">progressStatus</a>();</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span></div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a5061cc9e716f013e8f133fe0dcfb510a">  355</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a5061cc9e716f013e8f133fe0dcfb510a">openDesign</a>(VLNV const&amp; vlnv, const QString&amp; viewName);</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span></div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#adb6818d239bcb299c57652dcacee8ac0">  358</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#adb6818d239bcb299c57652dcacee8ac0">openMemoryDesign</a>(VLNV const&amp; vlnv, const QString&amp; viewName);</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span></div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ae5c44e6d2d69a02648ac6a2640132198">  361</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#ae5c44e6d2d69a02648ac6a2640132198">openSWDesign</a>(VLNV const&amp; vlnv, QString const&amp; viewName);</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span></div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a7e518c7a9abeb297e3e13bce2119ebfa">  364</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a7e518c7a9abeb297e3e13bce2119ebfa">openSystemDesign</a>(VLNV const&amp; vlnv, QString const&amp; viewName);</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span></div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#abe98d84eb3e083052e46f44dfd39a1e1">  367</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#abe98d84eb3e083052e46f44dfd39a1e1">openBus</a>(VLNV const&amp; busDefVLNV);</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span></div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a53d3a1f64c1eb99425342e78579f2c6e">  370</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a53d3a1f64c1eb99425342e78579f2c6e">openAbsDef</a>(VLNV const&amp; absDefVLNV);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#acef171b6ad316286373c07841c2c7856">  221</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classLibraryHandler.html#acef171b6ad316286373c07841c2c7856">getOwners</a>(QList&lt;VLNV&gt;&amp; list, VLNV const&amp; vlnvToSearch) const final;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ad98b5ff42406d9f38c95bd240b7cd4d5">  230</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classLibraryHandler.html#ad98b5ff42406d9f38c95bd240b7cd4d5">getChildren</a>(QList&lt;VLNV&gt;&amp; list, VLNV const&amp; vlnvToSearch) const final;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a1743eb0cd974e6d2b983628ef4d5fda7">  245</a></span>    VLNV <a class="code hl_function" href="classLibraryHandler.html#a1743eb0cd974e6d2b983628ef4d5fda7">getDesignVLNV</a>(VLNV const&amp; hierarchyRef) final;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a8b51cedaec22f065bcaa382443192553">  260</a></span>    QSharedPointer&lt;Design&gt; <a class="code hl_function" href="classLibraryHandler.html#a8b51cedaec22f065bcaa382443192553">getDesign</a>(VLNV const&amp; hierarchyRef) final;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ae40dce44ac32bb89cb2c4ff32affeadc">  268</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classLibraryHandler.html#ae40dce44ac32bb89cb2c4ff32affeadc">isValid</a>(VLNV const&amp; vlnv) final;</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a00d7b3125cd34fc59f5b102c46d0a6f6">  270</a></span>    <a class="code hl_class" href="classHierarchyModelBase.html">HierarchyModelBase</a>* <a class="code hl_function" href="classLibraryHandler.html#a00d7b3125cd34fc59f5b102c46d0a6f6">getHierarchyModel</a>();</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a80ccf42c958b44cbaf500a08d369a7fd">  272</a></span>    <a class="code hl_class" href="classLibraryModel.html">LibraryModel</a>* <a class="code hl_function" href="classLibraryHandler.html#a80ccf42c958b44cbaf500a08d369a7fd">getTreeModel</a>();</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a53987da3ef68fff62212ca8d5b250e84">  282</a></span>    QVector&lt;QString&gt; <a class="code hl_function" href="classLibraryHandler.html#a53987da3ef68fff62212ca8d5b250e84">findErrorsInDocument</a>(QSharedPointer&lt;Document&gt; document, QString const&amp; path);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>public slots:</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aced6b91e460e6d234d5d678d7b9547cb">  291</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#aced6b91e460e6d234d5d678d7b9547cb">onCheckLibraryIntegrity</a>() final;</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a78efdb6c849e4a1542d79ac55c98bb36">  298</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#a78efdb6c849e4a1542d79ac55c98bb36">onEditItem</a>(VLNV const&amp; vlnv) final;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a155b4726fa2af4e391a3a4f085e3fb5b">  306</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#a155b4726fa2af4e391a3a4f085e3fb5b">onOpenDesign</a>(VLNV const&amp; vlnv, QString const&amp; viewName) final;</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ab60131a0f698d68ab5de451589a4a003">  314</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#ab60131a0f698d68ab5de451589a4a003">onOpenMemoryDesign</a>(VLNV const&amp; vlnv, QString const&amp; activeView);</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#acdb1bf6709b4a874305125a284af0c34">  321</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#acdb1bf6709b4a874305125a284af0c34">onOpenSWDesign</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aa66f08349dccdb46722cb2d283d6459b">  329</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#aa66f08349dccdb46722cb2d283d6459b">onOpenSystemDesign</a>(VLNV const&amp; vlnv, QString const&amp; activeView);</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a2e6cd8922dcf6cf77ae985b902f4c320">  340</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#a2e6cd8922dcf6cf77ae985b902f4c320">removeObject</a>(VLNV const&amp; vlnv) final;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a0d40e8e889d026d1683d893bb5acc4e6">  349</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#a0d40e8e889d026d1683d893bb5acc4e6">removeObjects</a>(const QList&lt;VLNV&gt;&amp; vlnvList) final;</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span></div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a947267cb5c752bc46500951a23741cb4">  359</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#a947267cb5c752bc46500951a23741cb4">beginSave</a>();</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a6f0b6606834e940ccb47aefcb5dc241f">  365</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classLibraryHandler.html#a6f0b6606834e940ccb47aefcb5dc241f">endSave</a>();</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>signals:</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a46c071a685eadb1c7700bb4c01cc5a61">  370</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a46c071a685eadb1c7700bb4c01cc5a61">progressStatus</a>();</div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span></div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a4a424160f7722ff36a6faf80a44f0a8c">  373</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a4a424160f7722ff36a6faf80a44f0a8c">openComponent</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a5061cc9e716f013e8f133fe0dcfb510a">  373</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a5061cc9e716f013e8f133fe0dcfb510a">openDesign</a>(VLNV const&amp; vlnv, const QString&amp; viewName);</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span></div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a2a9c5dff0fec5a27945a484f76d328b8">  376</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a2a9c5dff0fec5a27945a484f76d328b8">openCatalog</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#adb6818d239bcb299c57652dcacee8ac0">  376</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#adb6818d239bcb299c57652dcacee8ac0">openMemoryDesign</a>(VLNV const&amp; vlnv, const QString&amp; viewName);</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span></div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a01572d3904ffa4ed266ad32959e030f1">  379</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a01572d3904ffa4ed266ad32959e030f1">openComDefinition</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ae5c44e6d2d69a02648ac6a2640132198">  379</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#ae5c44e6d2d69a02648ac6a2640132198">openSWDesign</a>(VLNV const&amp; vlnv, QString const&amp; viewName);</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span></div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ac76a4844ffb5dbf6f493b5a1ca39fe35">  382</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#ac76a4844ffb5dbf6f493b5a1ca39fe35">openApiDefinition</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a7e518c7a9abeb297e3e13bce2119ebfa">  382</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a7e518c7a9abeb297e3e13bce2119ebfa">openSystemDesign</a>(VLNV const&amp; vlnv, QString const&amp; viewName);</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span></div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#af0196306472d7aaafba4522fdc2ca6d3">  385</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#af0196306472d7aaafba4522fdc2ca6d3">itemSelected</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#abe98d84eb3e083052e46f44dfd39a1e1">  385</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#abe98d84eb3e083052e46f44dfd39a1e1">openBus</a>(VLNV const&amp; busDefVLNV);</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span></div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ab0d58cea088233672af15fe43c1c51c7">  388</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#ab0d58cea088233672af15fe43c1c51c7">openPlatformComponent</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a53d3a1f64c1eb99425342e78579f2c6e">  388</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a53d3a1f64c1eb99425342e78579f2c6e">openAbsDef</a>(VLNV const&amp; absDefVLNV);</div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span></div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a0e7320410a74b22ae52cf19e620e0589">  391</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a0e7320410a74b22ae52cf19e620e0589">updatedVLNV</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a4a424160f7722ff36a6faf80a44f0a8c">  391</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a4a424160f7722ff36a6faf80a44f0a8c">openComponent</a>(VLNV const&amp; vlnv);</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span></div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a9154bfc6a189c30b157d16846e35d372">  394</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a9154bfc6a189c30b157d16846e35d372">addVLNV</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a2a9c5dff0fec5a27945a484f76d328b8">  394</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a2a9c5dff0fec5a27945a484f76d328b8">openCatalog</a>(VLNV const&amp; vlnv);</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span></div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a55454f7dd282a3002378d9c3d92fcf38">  397</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a55454f7dd282a3002378d9c3d92fcf38">removeVLNV</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a01572d3904ffa4ed266ad32959e030f1">  397</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a01572d3904ffa4ed266ad32959e030f1">openComDefinition</a>(VLNV const&amp; vlnv);</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span></div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aea6760acd40edad35dfd36a37e627b18">  400</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#aea6760acd40edad35dfd36a37e627b18">resetModel</a>();</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>private slots:</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    </div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    <span class="keywordtype">void</span> onItemSaved(VLNV const&amp; vlnv);</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>private:</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ac76a4844ffb5dbf6f493b5a1ca39fe35">  400</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#ac76a4844ffb5dbf6f493b5a1ca39fe35">openApiDefinition</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span></div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#af0196306472d7aaafba4522fdc2ca6d3">  403</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#af0196306472d7aaafba4522fdc2ca6d3">itemSelected</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span></div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#ab0d58cea088233672af15fe43c1c51c7">  406</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#ab0d58cea088233672af15fe43c1c51c7">openPlatformComponent</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span></div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a0e7320410a74b22ae52cf19e620e0589">  409</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a0e7320410a74b22ae52cf19e620e0589">updatedVLNV</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span></div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a9154bfc6a189c30b157d16846e35d372">  412</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a9154bfc6a189c30b157d16846e35d372">addVLNV</a>(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span></div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#a55454f7dd282a3002378d9c3d92fcf38">  415</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#a55454f7dd282a3002378d9c3d92fcf38">removeVLNV</a>(VLNV const&amp; vlnv);</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span></div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    struct DocumentInfo</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    {</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>        QSharedPointer&lt;Document&gt; document;  <span class="comment">//&lt;! The model for the document.</span></div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>        QString path;                       <span class="comment">//&lt;! The path to the file containing the document.</span></div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classLibraryHandler.html#ae40dce44ac32bb89cb2c4ff32affeadc">isValid</a>;                       <span class="comment">//&lt;! Flag for well-formed content.</span></div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span></div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>        <span class="keyword">explicit</span> DocumentInfo(QString <span class="keyword">const</span>&amp; filePath = QString(), </div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>            QSharedPointer&lt;Document&gt; doc = QSharedPointer&lt;Document&gt;(),</div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>            <span class="keywordtype">bool</span> valid = <span class="keyword">false</span>): document(doc), path(filePath), <a class="code hl_function" href="classLibraryInterface.html#af50a76654ec81b4db0d849cbc1984afe">isValid</a>(valid) {}</div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    };</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span></div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>    <span class="keyword">struct </span>DocumentStatistics</div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    {</div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>        <span class="keywordtype">int</span> fileCount = 0;</div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>        <span class="keywordtype">int</span> documentCount = 0;</div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    };</div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span> </div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>    <span class="comment">//-----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    <span class="comment">// The private functions used by public class methods</span></div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>    <span class="comment">//-----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span></div>
-<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>    LibraryHandler();</div>
-<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span> </div>
-<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span></div>
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    <span class="keywordtype">void</span> syncronizeModels();</div>
-<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span></div>
-<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>    <span class="keywordtype">void</span> showNotFoundError(VLNV <span class="keyword">const</span>&amp; vlnv) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span></div>
-<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>    <span class="keywordtype">bool</span> addObject(QSharedPointer&lt;Document&gt; model, QString <span class="keyword">const</span>&amp; filePath);</div>
-<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span></div>
-<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>    <span class="keywordtype">void</span> clearCache();</div>
-<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span></div>
-<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>    <span class="keywordtype">void</span> loadAvailableVLNVs();</div>
-<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span></div>
-<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>    <span class="keywordtype">void</span> resetModels();</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno"><a class="line" href="classLibraryHandler.html#aea6760acd40edad35dfd36a37e627b18">  418</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classLibraryHandler.html#aea6760acd40edad35dfd36a37e627b18">resetModel</a>();</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span> </div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>private slots:</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    </div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>    <span class="keywordtype">void</span> onItemSaved(VLNV const&amp; vlnv);</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span> </div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>private:</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span></div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    struct DocumentInfo</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>    {</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>        QSharedPointer&lt;Document&gt; document;  <span class="comment">//&lt;! The model for the document.</span></div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>        QString path;                       <span class="comment">//&lt;! The path to the file containing the document.</span></div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classLibraryHandler.html#ae40dce44ac32bb89cb2c4ff32affeadc">isValid</a>;                       <span class="comment">//&lt;! Flag for well-formed content.</span></div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span></div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>        <span class="keyword">explicit</span> DocumentInfo(QString <span class="keyword">const</span>&amp; filePath = QString(), </div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>            QSharedPointer&lt;Document&gt; doc = QSharedPointer&lt;Document&gt;(),</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>            <span class="keywordtype">bool</span> valid = <span class="keyword">false</span>): document(doc), path(filePath), <a class="code hl_function" href="classLibraryInterface.html#af50a76654ec81b4db0d849cbc1984afe">isValid</a>(valid) {}</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>    };</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span></div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>    <span class="keyword">struct </span>DocumentStatistics</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    {</div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>        <span class="keywordtype">int</span> fileCount = 0;</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>        <span class="keywordtype">int</span> documentCount = 0;</div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>    };</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span> </div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>    <span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>    <span class="comment">// The private functions used by public class methods</span></div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    <span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span></div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>    LibraryHandler();</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span> </div>
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span></div>
-<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    <span class="keywordtype">void</span> showIntegrityResults() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    <span class="keywordtype">void</span> syncronizeModels();</div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span></div>
-<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>     <span class="keywordtype">bool</span> removeFile(QString <span class="keyword">const</span>&amp; filePath) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>    <span class="keywordtype">void</span> showNotFoundError(VLNV <span class="keyword">const</span>&amp; vlnv) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span></div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>    <span class="keywordtype">bool</span> addObject(QSharedPointer&lt;Document&gt; model, QString <span class="keyword">const</span>&amp; filePath);</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span></div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>    <span class="keywordtype">void</span> clearCache();</div>
 <div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span></div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>    <span class="keywordtype">bool</span> validateDocument(QSharedPointer&lt;Document&gt; document, QString <span class="keyword">const</span>&amp; documentPath);</div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span> </div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span></div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    <span class="keywordtype">bool</span> validateDependentVLNVReferencences(QSharedPointer&lt;Document&gt; document);</div>
-<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span></div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>    <span class="keywordtype">void</span> findErrorsInDependentVLNVReferencences(QSharedPointer&lt;const Document&gt; document, QVector&lt;QString&gt;&amp; errorList);</div>
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span></div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>    <span class="keywordtype">bool</span> validateDependentDirectories(QSharedPointer&lt;Document&gt; document, QString <span class="keyword">const</span>&amp; documentPath);</div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span>    <span class="keywordtype">void</span> loadAvailableVLNVs();</div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span></div>
+<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>    <span class="keywordtype">void</span> resetModels();</div>
+<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span></div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>    <span class="keywordtype">void</span> showIntegrityResults() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span></div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>     <span class="keywordtype">bool</span> removeFile(QString <span class="keyword">const</span>&amp; filePath) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span></div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>    <span class="keywordtype">bool</span> validateDocument(QSharedPointer&lt;Document&gt; document, QString <span class="keyword">const</span>&amp; documentPath);</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span> </div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span></div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>    <span class="keywordtype">bool</span> validateDependentVLNVReferencences(QSharedPointer&lt;Document&gt; document);</div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span></div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    <span class="keywordtype">void</span> findErrorsInDependentDirectories(QSharedPointer&lt;const Document&gt; document, QString <span class="keyword">const</span>&amp; documentPath,</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>        QVector&lt;QString&gt;&amp; errorList);</div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span></div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>    <span class="keywordtype">bool</span> validateDependentFiles(QSharedPointer&lt;Document&gt; document, QString <span class="keyword">const</span>&amp; documentPath);</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    <span class="keywordtype">void</span> findErrorsInDependentVLNVReferencences(QSharedPointer&lt;const Document&gt; document, QVector&lt;QString&gt;&amp; errorList);</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span></div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>    <span class="keywordtype">bool</span> validateDependentDirectories(QSharedPointer&lt;Document&gt; document, QString <span class="keyword">const</span>&amp; documentPath);</div>
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span></div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    <span class="keywordtype">void</span> findErrorsInDependentFiles(QSharedPointer&lt;const Document&gt; document, QString <span class="keyword">const</span>&amp; documentPath,</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    <span class="keywordtype">void</span> findErrorsInDependentDirectories(QSharedPointer&lt;const Document&gt; document, QString <span class="keyword">const</span>&amp; documentPath,</div>
 <div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>        QVector&lt;QString&gt;&amp; errorList);</div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span> </div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>    <span class="comment">//-----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    <span class="comment">// Data.</span></div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>    <span class="comment">//-----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span> </div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span></div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    NullChannel defaultChannel;</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span></div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    <span class="keywordtype">bool</span> validateDependentFiles(QSharedPointer&lt;Document&gt; document, QString <span class="keyword">const</span>&amp; documentPath);</div>
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span></div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>    MessageMediator* messageChannel_{ &amp;defaultChannel };</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span></div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    LibraryLoader loader_{ };</div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span></div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    QMap&lt;VLNV, DocumentInfo&gt; documentCache_;</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span></div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>    QRegularExpressionValidator urlTester_{ <a class="code hl_function" href="namespaceUtils.html#af42a230fa55a849124d61c1b0430ae4e">Utils::URL_VALIDITY_REG_EXP</a>, <span class="keyword">this</span> };</div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span></div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    DocumentValidator validator_{ <span class="keyword">this</span> };</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span></div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    LibraryTreeModel treeModel_{ <span class="keyword">this</span>, <span class="keyword">this</span> };</div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span></div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    HierarchyModel hierarchyModel_{ <span class="keyword">this</span>, <span class="keyword">this</span> };</div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span></div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    <span class="keywordtype">bool</span> saveInProgress_{ <span class="keyword">false</span> };</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span></div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    DocumentStatistics checkResults_;</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span> </div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>};</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>    <span class="keywordtype">void</span> findErrorsInDependentFiles(QSharedPointer&lt;const Document&gt; document, QString <span class="keyword">const</span>&amp; documentPath,</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>        QVector&lt;QString&gt;&amp; errorList);</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span> </div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    <span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    <span class="comment">// Data.</span></div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    <span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span> </div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span></div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    NullChannel defaultChannel;</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span></div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    MessageMediator* messageChannel_{ &amp;defaultChannel };</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span></div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    LibraryLoader loader_{ };</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span></div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    QMap&lt;VLNV, DocumentInfo&gt; documentCache_;</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span></div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    QRegularExpressionValidator urlTester_{ <a class="code hl_function" href="namespaceUtils.html#af42a230fa55a849124d61c1b0430ae4e">Utils::URL_VALIDITY_REG_EXP</a>, <span class="keyword">this</span> };</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span></div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>    DocumentValidator validator_{ <span class="keyword">this</span> };</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span></div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    QScopedPointer&lt;LibraryModel&gt; treeModel_ = QScopedPointer&lt;LibraryModel&gt;{ <span class="keyword">new</span> LibraryModel(<span class="keyword">this</span>) };</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span></div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    QScopedPointer&lt;HierarchyModelBase&gt; hierarchyModel_ = QScopedPointer&lt;HierarchyModelBase&gt;(<span class="keyword">new</span> HierarchyModelBase{ <span class="keyword">this</span>, <span class="keyword">this</span> });</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span></div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    <span class="keywordtype">bool</span> saveInProgress_{ <span class="keyword">false</span> };</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span></div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    DocumentStatistics checkResults_;</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>};</div>
 </div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span> </div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span><span class="preprocessor">#endif </span><span class="comment">// LIBRARYHANDLER_H</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span> </div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><span class="preprocessor">#endif </span><span class="comment">// LIBRARYHANDLER_H</span></div>
 <div class="ttc" id="aDocumentFileAccess_8h_html"><div class="ttname"><a href="DocumentFileAccess_8h.html">DocumentFileAccess.h</a></div></div>
 <div class="ttc" id="aDocumentValidator_8h_html"><div class="ttname"><a href="DocumentValidator_8h.html">DocumentValidator.h</a></div></div>
+<div class="ttc" id="aHierarchyModelBase_8h_html"><div class="ttname"><a href="HierarchyModelBase_8h.html">HierarchyModelBase.h</a></div></div>
 <div class="ttc" id="aLibraryInterface_8h_html"><div class="ttname"><a href="LibraryInterface_8h.html">LibraryInterface.h</a></div></div>
 <div class="ttc" id="aLibraryLoader_8h_html"><div class="ttname"><a href="LibraryLoader_8h.html">LibraryLoader.h</a></div></div>
-<div class="ttc" id="aLibraryTreeModel_8h_html"><div class="ttname"><a href="LibraryTreeModel_8h.html">LibraryTreeModel.h</a></div></div>
+<div class="ttc" id="aLibraryModel_8h_html"><div class="ttname"><a href="LibraryModel_8h.html">LibraryModel.h</a></div></div>
 <div class="ttc" id="aNullChannel_8h_html"><div class="ttname"><a href="NullChannel_8h.html">NullChannel.h</a></div></div>
-<div class="ttc" id="aclassHierarchyModel_html"><div class="ttname"><a href="classHierarchyModel.html">HierarchyModel</a></div><div class="ttdoc">Contains the items to display the library component hierarchy to user.</div><div class="ttdef"><b>Definition</b> <a href="hierarchymodel_8h_source.html#l00028">hierarchymodel.h:29</a></div></div>
+<div class="ttc" id="aclassHierarchyModelBase_html"><div class="ttname"><a href="classHierarchyModelBase.html">HierarchyModelBase</a></div><div class="ttdoc">Contains the items to display the library component hierarchy to user.</div><div class="ttdef"><b>Definition</b> <a href="HierarchyModelBase_8h_source.html#l00028">HierarchyModelBase.h:29</a></div></div>
+<div class="ttc" id="aclassLibraryHandler_html_a00d7b3125cd34fc59f5b102c46d0a6f6"><div class="ttname"><a href="classLibraryHandler.html#a00d7b3125cd34fc59f5b102c46d0a6f6">LibraryHandler::getHierarchyModel</a></div><div class="ttdeci">HierarchyModelBase * getHierarchyModel()</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_a01572d3904ffa4ed266ad32959e030f1"><div class="ttname"><a href="classLibraryHandler.html#a01572d3904ffa4ed266ad32959e030f1">LibraryHandler::openComDefinition</a></div><div class="ttdeci">void openComDefinition(VLNV const &amp;vlnv)</div><div class="ttdoc">Signal that user wants to open specified COM definition for editing.</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_a08fc1fcf79b6d428881812c49a825856"><div class="ttname"><a href="classLibraryHandler.html#a08fc1fcf79b6d428881812c49a825856">LibraryHandler::getInstance</a></div><div class="ttdeci">static LibraryHandler &amp; getInstance()</div><div class="ttdoc">The the instance of the library.</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_a0d40e8e889d026d1683d893bb5acc4e6"><div class="ttname"><a href="classLibraryHandler.html#a0d40e8e889d026d1683d893bb5acc4e6">LibraryHandler::removeObjects</a></div><div class="ttdeci">void removeObjects(const QList&lt; VLNV &gt; &amp;vlnvList) final</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_a0e7320410a74b22ae52cf19e620e0589"><div class="ttname"><a href="classLibraryHandler.html#a0e7320410a74b22ae52cf19e620e0589">LibraryHandler::updatedVLNV</a></div><div class="ttdeci">void updatedVLNV(VLNV const &amp;vlnv)</div><div class="ttdoc">Inform that object has been updated.</div></div>
-<div class="ttc" id="aclassLibraryHandler_html_a10b9f94d6752ad92496cc2a5d1651bac"><div class="ttname"><a href="classLibraryHandler.html#a10b9f94d6752ad92496cc2a5d1651bac">LibraryHandler::getHierarchyModel</a></div><div class="ttdeci">HierarchyModel * getHierarchyModel()</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_a155b4726fa2af4e391a3a4f085e3fb5b"><div class="ttname"><a href="classLibraryHandler.html#a155b4726fa2af4e391a3a4f085e3fb5b">LibraryHandler::onOpenDesign</a></div><div class="ttdeci">void onOpenDesign(VLNV const &amp;vlnv, QString const &amp;viewName) final</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_a1743eb0cd974e6d2b983628ef4d5fda7"><div class="ttname"><a href="classLibraryHandler.html#a1743eb0cd974e6d2b983628ef4d5fda7">LibraryHandler::getDesignVLNV</a></div><div class="ttdeci">VLNV getDesignVLNV(VLNV const &amp;hierarchyRef) final</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_a260f7d4aa5d03766d8789cec8764af55"><div class="ttname"><a href="classLibraryHandler.html#a260f7d4aa5d03766d8789cec8764af55">LibraryHandler::searchForIPXactFiles</a></div><div class="ttdeci">void searchForIPXactFiles() final</div><div class="ttdoc">Search for IP-Xact files in the file system and add them to library.</div></div>
@@ -394,12 +400,13 @@ $(function(){initNavTree('LibraryHandler_8h_source.html',''); initResizable(true
 <div class="ttc" id="aclassLibraryHandler_html_a6aba79451637e9c6ae70a71defeb4ad4"><div class="ttname"><a href="classLibraryHandler.html#a6aba79451637e9c6ae70a71defeb4ad4">LibraryHandler::getModel</a></div><div class="ttdeci">QSharedPointer&lt; Document &gt; getModel(VLNV const &amp;vlnv) final</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_a6f0b6606834e940ccb47aefcb5dc241f"><div class="ttname"><a href="classLibraryHandler.html#a6f0b6606834e940ccb47aefcb5dc241f">LibraryHandler::endSave</a></div><div class="ttdeci">void endSave()</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_a71f72c510beb81cbf022f59aa30dc414"><div class="ttname"><a href="classLibraryHandler.html#a71f72c510beb81cbf022f59aa30dc414">LibraryHandler::getDependencyFiles</a></div><div class="ttdeci">void getDependencyFiles(VLNV const &amp;vlnv, QStringList &amp;list) final</div></div>
-<div class="ttc" id="aclassLibraryHandler_html_a7447b9ce63365b367bd864c2cddb16bd"><div class="ttname"><a href="classLibraryHandler.html#a7447b9ce63365b367bd864c2cddb16bd">LibraryHandler::getTreeModel</a></div><div class="ttdeci">LibraryTreeModel * getTreeModel()</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_a78efdb6c849e4a1542d79ac55c98bb36"><div class="ttname"><a href="classLibraryHandler.html#a78efdb6c849e4a1542d79ac55c98bb36">LibraryHandler::onEditItem</a></div><div class="ttdeci">void onEditItem(VLNV const &amp;vlnv) final</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_a7e518c7a9abeb297e3e13bce2119ebfa"><div class="ttname"><a href="classLibraryHandler.html#a7e518c7a9abeb297e3e13bce2119ebfa">LibraryHandler::openSystemDesign</a></div><div class="ttdeci">void openSystemDesign(VLNV const &amp;vlnv, QString const &amp;viewName)</div><div class="ttdoc">Signal that user wants to open a system for editing.</div></div>
+<div class="ttc" id="aclassLibraryHandler_html_a80ccf42c958b44cbaf500a08d369a7fd"><div class="ttname"><a href="classLibraryHandler.html#a80ccf42c958b44cbaf500a08d369a7fd">LibraryHandler::getTreeModel</a></div><div class="ttdeci">LibraryModel * getTreeModel()</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_a8b51cedaec22f065bcaa382443192553"><div class="ttname"><a href="classLibraryHandler.html#a8b51cedaec22f065bcaa382443192553">LibraryHandler::getDesign</a></div><div class="ttdeci">QSharedPointer&lt; Design &gt; getDesign(VLNV const &amp;hierarchyRef) final</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_a9154bfc6a189c30b157d16846e35d372"><div class="ttname"><a href="classLibraryHandler.html#a9154bfc6a189c30b157d16846e35d372">LibraryHandler::addVLNV</a></div><div class="ttdeci">void addVLNV(VLNV const &amp;vlnv)</div><div class="ttdoc">Inform tree model that a vlnv is to be added to the tree.</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_a947267cb5c752bc46500951a23741cb4"><div class="ttname"><a href="classLibraryHandler.html#a947267cb5c752bc46500951a23741cb4">LibraryHandler::beginSave</a></div><div class="ttdeci">void beginSave()</div></div>
+<div class="ttc" id="aclassLibraryHandler_html_a97d795f8cd97d5ba60e2c2aa579e4fa8"><div class="ttname"><a href="classLibraryHandler.html#a97d795f8cd97d5ba60e2c2aa579e4fa8">LibraryHandler::replaceHierarchyModel</a></div><div class="ttdeci">void replaceHierarchyModel(HierarchyModelBase *model)</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_aa66f08349dccdb46722cb2d283d6459b"><div class="ttname"><a href="classLibraryHandler.html#aa66f08349dccdb46722cb2d283d6459b">LibraryHandler::onOpenSystemDesign</a></div><div class="ttdeci">void onOpenSystemDesign(VLNV const &amp;vlnv, QString const &amp;activeView)</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_aabf64341c6184433f0b4b291dfb86d1f"><div class="ttname"><a href="classLibraryHandler.html#aabf64341c6184433f0b4b291dfb86d1f">LibraryHandler::setOutputChannel</a></div><div class="ttdeci">void setOutputChannel(MessageMediator *messageChannel)</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_aad26326c193def00b05b4b71c78ea535"><div class="ttname"><a href="classLibraryHandler.html#aad26326c193def00b05b4b71c78ea535">LibraryHandler::operator=</a></div><div class="ttdeci">LibraryHandler &amp; operator=(const LibraryHandler &amp;other)=delete</div><div class="ttdoc">No assignment.</div></div>
@@ -419,6 +426,7 @@ $(function(){initNavTree('LibraryHandler_8h_source.html',''); initResizable(true
 <div class="ttc" id="aclassLibraryHandler_html_ae344dfa8a2bea96bc8bab3bc79441158"><div class="ttname"><a href="classLibraryHandler.html#ae344dfa8a2bea96bc8bab3bc79441158">LibraryHandler::~LibraryHandler</a></div><div class="ttdeci">~LibraryHandler() final=default</div><div class="ttdoc">The destructor.</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_ae40dce44ac32bb89cb2c4ff32affeadc"><div class="ttname"><a href="classLibraryHandler.html#ae40dce44ac32bb89cb2c4ff32affeadc">LibraryHandler::isValid</a></div><div class="ttdeci">bool isValid(VLNV const &amp;vlnv) final</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_ae5c44e6d2d69a02648ac6a2640132198"><div class="ttname"><a href="classLibraryHandler.html#ae5c44e6d2d69a02648ac6a2640132198">LibraryHandler::openSWDesign</a></div><div class="ttdeci">void openSWDesign(VLNV const &amp;vlnv, QString const &amp;viewName)</div><div class="ttdoc">Signal that user wants to open the specified software design for editing.</div></div>
+<div class="ttc" id="aclassLibraryHandler_html_ae608d8da418a40ce3c0d9efde42c2128"><div class="ttname"><a href="classLibraryHandler.html#ae608d8da418a40ce3c0d9efde42c2128">LibraryHandler::replaceModel</a></div><div class="ttdeci">void replaceModel(LibraryModel *model)</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_ae6ce7b20a14094030235914c80c59d48"><div class="ttname"><a href="classLibraryHandler.html#ae6ce7b20a14094030235914c80c59d48">LibraryHandler::getDocumentType</a></div><div class="ttdeci">VLNV::IPXactType getDocumentType(VLNV const &amp;vlnv) final</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_ae96d67b66ca796bbed7f6260d8ebb9ee"><div class="ttname"><a href="classLibraryHandler.html#ae96d67b66ca796bbed7f6260d8ebb9ee">LibraryHandler::getModelReadOnly</a></div><div class="ttdeci">QSharedPointer&lt; Document const &gt; getModelReadOnly(VLNV const &amp;vlnv) final</div></div>
 <div class="ttc" id="aclassLibraryHandler_html_aea6760acd40edad35dfd36a37e627b18"><div class="ttname"><a href="classLibraryHandler.html#aea6760acd40edad35dfd36a37e627b18">LibraryHandler::resetModel</a></div><div class="ttdeci">void resetModel()</div><div class="ttdoc">Inform both models that the content must be reset.</div></div>
@@ -427,9 +435,8 @@ $(function(){initNavTree('LibraryHandler_8h_source.html',''); initResizable(true
 <div class="ttc" id="aclassLibraryInterface_html"><div class="ttname"><a href="classLibraryInterface.html">LibraryInterface</a></div><div class="ttdoc">LibraryInterface defines an interface to operate the IP-XACT-library.</div><div class="ttdef"><b>Definition</b> <a href="LibraryInterface_8h_source.html#l00027">LibraryInterface.h:28</a></div></div>
 <div class="ttc" id="aclassLibraryInterface_html_af50a76654ec81b4db0d849cbc1984afe"><div class="ttname"><a href="classLibraryInterface.html#af50a76654ec81b4db0d849cbc1984afe">LibraryInterface::isValid</a></div><div class="ttdeci">virtual bool isValid(VLNV const &amp;vlnv)=0</div></div>
 <div class="ttc" id="aclassLibraryItem_html"><div class="ttname"><a href="classLibraryItem.html">LibraryItem</a></div><div class="ttdoc">LibraryItem class is used to create the hierarchical structure of IP library.</div><div class="ttdef"><b>Definition</b> <a href="LibraryItem_8h_source.html#l00026">LibraryItem.h:27</a></div></div>
-<div class="ttc" id="aclassLibraryTreeModel_html"><div class="ttname"><a href="classLibraryTreeModel.html">LibraryTreeModel</a></div><div class="ttdoc">The model that contains the LibraryItems to display library hierarchically.</div><div class="ttdef"><b>Definition</b> <a href="LibraryTreeModel_8h_source.html#l00032">LibraryTreeModel.h:33</a></div></div>
+<div class="ttc" id="aclassLibraryModel_html"><div class="ttname"><a href="classLibraryModel.html">LibraryModel</a></div><div class="ttdoc">The model that contains the LibraryItems to display library hierarchically.</div><div class="ttdef"><b>Definition</b> <a href="LibraryModel_8h_source.html#l00032">LibraryModel.h:33</a></div></div>
 <div class="ttc" id="aclassMessageMediator_html"><div class="ttname"><a href="classMessageMediator.html">MessageMediator</a></div><div class="ttdoc">Interface for outputting messages to the user.</div><div class="ttdef"><b>Definition</b> <a href="MessageMediator_8h_source.html#l00020">MessageMediator.h:21</a></div></div>
-<div class="ttc" id="ahierarchymodel_8h_html"><div class="ttname"><a href="hierarchymodel_8h.html">hierarchymodel.h</a></div></div>
 <div class="ttc" id="anamespaceUtils_html_af42a230fa55a849124d61c1b0430ae4e"><div class="ttname"><a href="namespaceUtils.html#af42a230fa55a849124d61c1b0430ae4e">Utils::URL_VALIDITY_REG_EXP</a></div><div class="ttdeci">const QRegularExpression URL_VALIDITY_REG_EXP(&quot;^[a-z]{3,9}[:][/]{2}[a-z0-9]+([-.][a-z0-9]+)*([/][-a-z0-9_.;,?=&amp;%#~+]*)*$&quot;, QRegularExpression::CaseInsensitiveOption)</div><div class="ttdoc">Regular expression to validate URLs.</div></div>
 <div class="ttc" id="autils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

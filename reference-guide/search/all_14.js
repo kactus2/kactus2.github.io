@@ -14,7 +14,7 @@ var searchData=
   ['versionfull_11',['versionFull',['../namespaceVersionHelper.html#a74af4673908d56ecf49f42f4e99fc6e9',1,'VersionHelper']]],
   ['versionhelper_12',['VersionHelper',['../namespaceVersionHelper.html',1,'']]],
   ['versionhelper_2eh_13',['VersionHelper.h',['../VersionHelper_8h.html',1,'']]],
-  ['viewname_14',['VIEWNAME',['../namespaceImportColors.html#afb406479ffa59cae78eca2ac483187e1',1,'ImportColors']]],
+  ['viewname_14',['VIEWNAME',['../namespaceKactusColors_1_1Importer.html#aea73d89bb12ff6e6f59bd094adb28fc7',1,'KactusColors::Importer']]],
   ['vlnv_15',['vlnv',['../structLibraryLoader_1_1LoadTarget.html#aae6f2077f80deaa6bb27b441dc1a69f2',1,'LibraryLoader::LoadTarget']]],
   ['vlnvexistsinlibrary_16',['vlnvExistsInLibrary',['../classPythonAPI.html#ad5a33e84cd00a21e58fe9d9f1b8f480d',1,'PythonAPI']]]
 ];

@@ -21,14 +21,8 @@ var namespaces_dup =
       [ "resolveURI", "namespaceFileHandler.html#a68308b798da73cc5be6d8703f1d4a550", null ],
       [ "URL_VALIDITY_REG_EXP", "namespaceFileHandler.html#a220f3403361909a05146365fb8a8439e", null ]
     ] ],
-    [ "ImportColors", "namespaceImportColors.html", [
-      [ "INSTANCECOLOR", "namespaceImportColors.html#a0c72b59475719538f0aa1875ce2bbbc9", null ],
-      [ "MODELPARAMETER", "namespaceImportColors.html#a1b68f966b3a388d505690a75f8c60ae9", null ],
-      [ "PARAMETER", "namespaceImportColors.html#a47a37d2451396e6e5c31fc55ebeb95fd", null ],
-      [ "PORT", "namespaceImportColors.html#aadbaa2e5efed16e92b5797c7e6115070", null ],
-      [ "VIEWNAME", "namespaceImportColors.html#afb406479ffa59cae78eca2ac483187e1", null ]
-    ] ],
     [ "InterconnectGeneration", "namespaceInterconnectGeneration.html", "namespaceInterconnectGeneration" ],
+    [ "KactusColors", "namespaceKactusColors.html", "namespaceKactusColors" ],
     [ "ListHelper", "namespaceListHelper.html", [
       [ "itemIndex", "namespaceListHelper.html#ad07741ea0c1e50c7d0e8f5e6a10b804d", null ],
       [ "listNames", "namespaceListHelper.html#a358c07bb5222432acb4330a713ff0150", null ]

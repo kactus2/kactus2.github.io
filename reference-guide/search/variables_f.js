@@ -1,5 +1,20 @@
 var searchData=
 [
-  ['url_5fvalidity_5freg_5fexp_0',['URL_VALIDITY_REG_EXP',['../namespaceFileHandler.html#a220f3403361909a05146365fb8a8439e',1,'FileHandler']]],
-  ['userwidth_1',['userWidth',['../structInterconnectGeneration_1_1ConfigStruct.html#a292c50f6259c05da49db07f4d944cc0c',1,'InterconnectGeneration::ConfigStruct']]]
+  ['signed_0',['SIGNED',['../namespaceSystemVerilogSyntax.html#a731bbf84a0eaed3f7a1b7d90f24ba44c',1,'SystemVerilogSyntax']]],
+  ['size_1',['SIZE',['../namespaceSystemVerilogSyntax.html#ac60fd9ed16b4eaf9feffd958e0fbbc07',1,'SystemVerilogSyntax']]],
+  ['slave_5finterface_2',['SLAVE_INTERFACE',['../namespaceKactusColors.html#ab6358a0f81e338880d13364792a4b730',1,'KactusColors']]],
+  ['soc_5f_3',['soc_',['../structUtils_1_1HierarchyOptions.html#acedaec30cebf1918b5e2a8f149d8625f',1,'Utils::HierarchyOptions']]],
+  ['start_4',['start',['../structInterconnectGeneration_1_1AddressPair.html#adf7656032e53868af32116010aead08a',1,'InterconnectGeneration::AddressPair::start'],['../structInterconnectGeneration_1_1EndpointData.html#a2b66d23b7ac6c2ec983772c49f76964c',1,'InterconnectGeneration::EndpointData::start'],['../structInterconnectGeneration_1_1BusInterfaceInfo.html#ade66dd14414a5c78757acbc52977fd14',1,'InterconnectGeneration::BusInterfaceInfo::start']]],
+  ['std14_5f_5',['std14_',['../structUtils_1_1RevisionOptions.html#a19de655b17d124b2b3331330f130670f',1,'Utils::RevisionOptions']]],
+  ['std22_5f_6',['std22_',['../structUtils_1_1RevisionOptions.html#a33f1f29b340fcea93603fc8d81916aaf',1,'Utils::RevisionOptions']]],
+  ['sticky_5fnote_5fbackground_7',['STICKY_NOTE_BACKGROUND',['../namespaceKactusColors.html#a1605a4611b4ed7f939f72be718d2202b',1,'KactusColors']]],
+  ['sticky_5fnote_5ftext_8',['STICKY_NOTE_TEXT',['../namespaceKactusColors.html#a55adc6d808a3b21fe3900deb527a908b',1,'KactusColors']]],
+  ['string_5fhighlight_9',['STRING_HIGHLIGHT',['../namespaceKactusColors.html#a02050344dcfc0d2b29a98c9d9fd17ec2',1,'KactusColors']]],
+  ['string_5fliteral_10',['STRING_LITERAL',['../namespaceSystemVerilogSyntax.html#ad7b4c8a4a17c9bc53bbb593f4707f2b6',1,'SystemVerilogSyntax']]],
+  ['strong_5ffield_11',['STRONG_FIELD',['../namespaceKactusColors.html#a9c88679f042f123f763c71f7fe3e2f05',1,'KactusColors']]],
+  ['subspace_5fmap_5fcolor_12',['SUBSPACE_MAP_COLOR',['../namespaceKactusColors.html#a986c7388892c326eba8f14f98d8bee7e',1,'KactusColors']]],
+  ['sw_5f_13',['sw_',['../structUtils_1_1ImplementationOptions.html#a9274700ac33024297e5c5712cb62ce0e',1,'Utils::ImplementationOptions']]],
+  ['sw_5fcomponent_14',['SW_COMPONENT',['../namespaceKactusColors.html#af6480cac6bfa0b9727389f0bb463154d',1,'KactusColors']]],
+  ['system_5f_15',['system_',['../structUtils_1_1ImplementationOptions.html#a45b9662745b1c2a12ab21d58b25e4b07',1,'Utils::ImplementationOptions']]],
+  ['system_5finterface_16',['SYSTEM_INTERFACE',['../namespaceKactusColors.html#a2412f1c0221a5b579de6fd594a3a241b',1,'KactusColors']]]
 ];
