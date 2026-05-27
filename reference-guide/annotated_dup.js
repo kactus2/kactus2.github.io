@@ -72,6 +72,7 @@ var annotated_dup =
     [ "LibraryItem", "classLibraryItem.html", "classLibraryItem" ],
     [ "LibraryLoader", "classLibraryLoader.html", "classLibraryLoader" ],
     [ "LibraryModel", "classLibraryModel.html", "classLibraryModel" ],
+    [ "ListFinder", "classListFinder.html", "classListFinder" ],
     [ "ListParameterFinder", "classListParameterFinder.html", "classListParameterFinder" ],
     [ "MasterPortInterface", "classMasterPortInterface.html", "classMasterPortInterface" ],
     [ "MemoryBlockInterface", "classMemoryBlockInterface.html", "classMemoryBlockInterface" ],

@@ -139,289 +139,295 @@ $(function(){initNavTree('PythonAPI_8h_source.html',''); initResizable(true); })
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;<a class="code" href="ComponentAndInstantiationsParameterFinder_8h.html">KactusAPI/include/ComponentAndInstantiationsParameterFinder.h</a>&gt;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;<a class="code" href="IPXactSystemVerilogParser_8h.html">KactusAPI/include/IPXactSystemVerilogParser.h</a>&gt;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;<a class="code" href="ExpressionFormatter_8h.html">KactusAPI/include/ExpressionFormatter.h</a>&gt;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="code" href="PortsInterface_8h.html">KactusAPI/include/PortsInterface.h</a>&gt;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;<a class="code" href="ParametersInterface_8h.html">KactusAPI/include/ParametersInterface.h</a>&gt;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;IPXACTmodels/Component/validators/PortValidator.h&gt;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">class </span><a class="code hl_class" href="classMessageMediator.html">MessageMediator</a>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">class </span>Component;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">class </span>Field;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">class </span>Register;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">class </span>RegisterBase;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">class </span>AddressBlock;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">class </span>MemoryMap;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">class </span>FileSet;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">class </span><a class="code hl_class" href="classMemoryMapInterface.html">MemoryMapInterface</a>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">class </span><a class="code hl_class" href="classFileSetInterface.html">FileSetInterface</a>;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">class </span><a class="code hl_class" href="classComponentParameterFinder.html">ComponentParameterFinder</a>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">class </span><a class="code hl_class" href="classExpressionParser.html">ExpressionParser</a>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">class </span>PortValidator;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">class </span><a class="code hl_class" href="classExpressionFormatter.html">ExpressionFormatter</a>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">class </span>ParameterValidator;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">class </span>MemoryMapValidator;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">class </span>Design;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;<a class="code" href="ListParameterFinder_8h.html">KactusAPI/include/ListParameterFinder.h</a>&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;<a class="code" href="PortsInterface_8h.html">KactusAPI/include/PortsInterface.h</a>&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="code" href="ParametersInterface_8h.html">KactusAPI/include/ParametersInterface.h</a>&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;IPXACTmodels/Component/validators/PortValidator.h&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">class </span><a class="code hl_class" href="classMessageMediator.html">MessageMediator</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">class </span>Component;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">class </span>Field;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">class </span>Register;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">class </span>RegisterBase;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">class </span>AddressBlock;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">class </span>MemoryMap;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">class </span>FileSet;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">class </span><a class="code hl_class" href="classMemoryMapInterface.html">MemoryMapInterface</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">class </span><a class="code hl_class" href="classFileSetInterface.html">FileSetInterface</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">class </span><a class="code hl_class" href="classComponentParameterFinder.html">ComponentParameterFinder</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">class </span><a class="code hl_class" href="classExpressionParser.html">ExpressionParser</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">class </span>PortValidator;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">class </span><a class="code hl_class" href="classExpressionFormatter.html">ExpressionFormatter</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">class </span>ParameterValidator;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">class </span>MemoryMapValidator;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">class </span>Design;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">//-----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">//-----------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00065" data-start="{" data-end="};">
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classPythonAPI.html">   65</a></span><span class="keyword">class </span><a class="code hl_function" href="classPythonAPI.html#a7ae0ca9123c0f4a99438eed85b028342">PythonAPI</a></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    </div>
-<div class="foldopen" id="foldopen00072" data-start="{" data-end="};">
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918d">   72</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918d">StdRev</a></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918da14995e4cbb3538373825582ae201d8cb">   74</a></span>        <a class="code hl_enumvalue" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918da14995e4cbb3538373825582ae201d8cb">Std14</a>, <span class="comment">// IEEE 1685-2014</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918daea543842c91e3af3c4322e0e71ca0ee7">   75</a></span>        <a class="code hl_enumvalue" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918daea543842c91e3af3c4322e0e71ca0ee7">Std22</a>  <span class="comment">// IEEE 1685-2022</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    };</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="};">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classPythonAPI.html">   66</a></span><span class="keyword">class </span><a class="code hl_function" href="classPythonAPI.html#a7ae0ca9123c0f4a99438eed85b028342">PythonAPI</a></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    </div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="};">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918d">   73</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918d">StdRev</a></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918da14995e4cbb3538373825582ae201d8cb">   75</a></span>        <a class="code hl_enumvalue" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918da14995e4cbb3538373825582ae201d8cb">Std14</a>, <span class="comment">// IEEE 1685-2014</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918daea543842c91e3af3c4322e0e71ca0ee7">   76</a></span>        <a class="code hl_enumvalue" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918daea543842c91e3af3c4322e0e71ca0ee7">Std22</a>  <span class="comment">// IEEE 1685-2022</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    };</div>
 </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_function" href="classPythonAPI.html#a7ae0ca9123c0f4a99438eed85b028342">PythonAPI</a>();</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classPythonAPI.html#a91afddcf573417e8ed01e580a43de3d8">   86</a></span>    <a class="code hl_function" href="classPythonAPI.html#a91afddcf573417e8ed01e580a43de3d8">~PythonAPI</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>   </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    std::string <a class="code hl_function" href="classPythonAPI.html#a079684bc9f0061433b23b0326747c493">getVersion</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    std::vector&lt;std::string&gt; <a class="code hl_function" href="classPythonAPI.html#a50d51ea8915f74240807252e04d8b138">getActiveLibraryPaths</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    std::vector&lt;std::string&gt; <a class="code hl_function" href="classPythonAPI.html#acb230e230fb19cd7c5f2e6926d501aa2">getAllLibraryPaths</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a416c644a5025e4962cd83723665ef696">setLibraryPathActive</a>(std::string <span class="keyword">const</span>&amp; path, <span class="keywordtype">bool</span> isActive);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#aa3766d815d8802b9d5814906971be982">addLibraryPath</a>(std::string <span class="keyword">const</span>&amp; path, <span class="keywordtype">bool</span> isActive = <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a27ef686e76a114dce39a82a10b916d72">removeLibraryPath</a>(std::string <span class="keyword">const</span>&amp; path);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <a class="code hl_class" href="classPortsInterface.html">PortsInterface</a>* <a class="code hl_function" href="classPythonAPI.html#a5114d9c7403806e8928254623e12a938">getPortsInterface</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span></div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <a class="code hl_class" href="classParametersInterface.html">ParametersInterface</a>* <a class="code hl_function" href="classPythonAPI.html#a5988a253918fd413eb65416d4e6fe684">getComponentParameterInterface</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_class" href="classMemoryMapInterface.html">MemoryMapInterface</a>* <a class="code hl_function" href="classPythonAPI.html#af831bbb58fedfc05f534b6eb3fe93013">getMapInterface</a>();</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span></div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <a class="code hl_class" href="classFileSetInterface.html">FileSetInterface</a>* <a class="code hl_function" href="classPythonAPI.html#a5d754870c3620ccd10f2790400e2255b">getFileSetInterface</a>();</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span></div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <a class="code hl_class" href="classBusInterfaceInterface.html">BusInterfaceInterface</a>* <a class="code hl_function" href="classPythonAPI.html#a47a32689731b3cd970883510ab4d0042">getBusInterface</a>();</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a0baab6893b11452f90c8b75da65ae2ba">setupLibrary</a>(std::string <span class="keyword">const</span>&amp; settingsFileString);</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a9cebaa2f0bc167dda6d2ef099fdc26e2">setLibraryPaths</a>(std::vector&lt;std::string&gt; <span class="keyword">const</span>&amp; paths) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    std::string <a class="code hl_function" href="classPythonAPI.html#ae44840299315dc3c5a8f1cb2415bd880">getDefaultLibraryPath</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a5ebc69a0b48d778313617eaddc8f17b7">setDefaultLibraryPath</a>(std::string <span class="keyword">const</span>&amp; path) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classPythonAPI.html#a9d1a7834c857c6f51503620d78245a6d">importFile</a>(std::string <span class="keyword">const</span>&amp; path, std::string <span class="keyword">const</span>&amp; vlnv, <span class="keywordtype">bool</span> overwrite = <span class="keyword">false</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span></div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>     <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a68b0d100465842caca5f2cd4f9ea7447">generate</a>(std::string <span class="keyword">const</span>&amp; format, std::string <span class="keyword">const</span>&amp; vlnv, std::string <span class="keyword">const</span>&amp; viewName,</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        std::string <span class="keyword">const</span>&amp; outputDirectory) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>     <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a63c50a92e3b5356c8aef1a8fa61d8e06">generateInterconnect</a>();</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classPythonAPI.html#af2ea6e848f24bbd77cad75d31da54d36">getFileCount</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    std::vector&lt;std::string&gt; <a class="code hl_function" href="classPythonAPI.html#a52b7a23c4085f34f775d2a4d6ce20a61">listVLNVs</a>(std::string <span class="keyword">const</span>&amp; vendor = std::string()) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span></div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    std::vector&lt;std::string&gt; <a class="code hl_function" href="classPythonAPI.html#a681e6bf59e7807b2992d2cd13e5cdc0e">listComponentVLNVs</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#ad5a33e84cd00a21e58fe9d9f1b8f480d">vlnvExistsInLibrary</a>(std::string <span class="keyword">const</span>&amp; vendor, std::string <span class="keyword">const</span>&amp; library, std::string <span class="keyword">const</span>&amp; name,</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        std::string <span class="keyword">const</span>&amp; version) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span></div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a5bbd8d89317a50ed9000692321229b77">createComponent</a>(std::string <span class="keyword">const</span>&amp; vendor, std::string <span class="keyword">const</span>&amp; library, std::string <span class="keyword">const</span>&amp; name,</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        std::string <span class="keyword">const</span>&amp; version, <a class="code hl_enumeration" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918d">StdRev</a> revision = <a class="code hl_enumvalue" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918daea543842c91e3af3c4322e0e71ca0ee7">StdRev::Std22</a>);</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    std::string <a class="code hl_function" href="classPythonAPI.html#acca292206ba5c68b874d18980576107c">getVLNVDirectory</a>(std::string <span class="keyword">const</span>&amp; vendor, std::string <span class="keyword">const</span>&amp; library, std::string <span class="keyword">const</span>&amp; name,</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        std::string <span class="keyword">const</span>&amp; version) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span></div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    std::string <a class="code hl_function" href="classPythonAPI.html#a2be07d74726ed26c62c255200d4df627">getFirstViewName</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span></div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a311926338ac81d14db6e87ed1b5ebeda">openComponent</a>(std::string <span class="keyword">const</span>&amp; vlnvString);</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span></div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#ab208db17c416ee3cb0a24c73a7438d15">closeOpenComponent</a>();</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span></div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    std::string <a class="code hl_function" href="classPythonAPI.html#aea6434bf0ed3442ddefcfed8ad9ab1be">getComponentName</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span></div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    std::string <a class="code hl_function" href="classPythonAPI.html#a38f22d43aee4a47a2ddff01e33958db3">getComponentDescription</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span></div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    std::string <a class="code hl_function" href="classPythonAPI.html#a971ae423fd36c159f904893330da0d58">getComponentStdRevision</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span></div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a5fdb37050859bc9c91f9fec00d5e5eea">saveComponent</a>();</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span></div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a5c722dac614eefc98c697c10f86e3d48">setBlocksForInterface</a>(std::string <span class="keyword">const</span>&amp; mapName);</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span></div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a4e652bbd0ea60fc63b5afbb542a21e80">setRegistersForInterface</a>(std::string <span class="keyword">const</span>&amp; mapName, std::string <span class="keyword">const</span>&amp; blockName);</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span></div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a550e6e022459dd8f976cc96c75bbe399">setFieldsForInterface</a>(std::string <span class="keyword">const</span>&amp; mapName, std::string <span class="keyword">const</span>&amp; blockName,</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        std::string <span class="keyword">const</span>&amp; registerName);</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span></div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a8149930733c74427614e5c3a34190e0a">setResetsForInterface</a>(std::string <span class="keyword">const</span>&amp; mapName, std::string <span class="keyword">const</span>&amp; blockName,</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        std::string <span class="keyword">const</span>&amp; registerName, std::string <span class="keyword">const</span>&amp; fieldName);</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span></div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a72f5c6a7a35c7de062e20db09bfe2b1d">setFilesForInterface</a>(std::string <span class="keyword">const</span>&amp; setName);</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span></div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#af4d47ebe047f032ce5b27ee207c31a7f">setFileBuildersForInterface</a>(std::string <span class="keyword">const</span>&amp; setName);</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        </div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#adfbbacd7b681629a5465d19ae09b148c">createDesign</a>(std::string <span class="keyword">const</span>&amp; vendor, std::string <span class="keyword">const</span>&amp; library, std::string <span class="keyword">const</span>&amp; name,</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>        std::string <span class="keyword">const</span>&amp; version, <a class="code hl_enumeration" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918d">StdRev</a> revision = <a class="code hl_enumvalue" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918daea543842c91e3af3c4322e0e71ca0ee7">StdRev::Std22</a>);</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    </div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    std::string <a class="code hl_function" href="classPythonAPI.html#a76e6dbc579a6f7aa03646610abbedeb3">getDesignStdRevision</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span></div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#afae64475954faa45d272b75c0a67de88">openDesign</a>(std::string <span class="keyword">const</span>&amp; vlnvString);</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span></div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#ae26eb7a85b03b5ba8a04565c9ea712b2">closeOpenDesign</a>();</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span></div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#af0fcb19712c24cdf37800ce5ba7e2408">saveDesign</a>();</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span></div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#ab151e5e284a634dce73427d924439f27">addComponentInstance</a>(std::string <span class="keyword">const</span>&amp; vlnvString, std::string <span class="keyword">const</span>&amp; instanceName);</div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span></div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a154a345e2af1fc80311716af88d932df">removeComponentInstance</a>(std::string <span class="keyword">const</span>&amp; instanceName);</div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span></div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a09c4fa69fff38a23d8d1546285c8423e">removeInstanceConnections</a>(std::string <span class="keyword">const</span>&amp; instanceName);</div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span></div>
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a908e5b91a115a2d3503641e8f1d5fcc4">removeInstanceAdHocConnections</a>(std::string <span class="keyword">const</span>&amp; instanceName);</div>
-<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span></div>
-<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a29102bd5f9020593b0b1c36bd37c49b6">renameInstance</a>(std::string <span class="keyword">const</span>&amp; currentName, std::string <span class="keyword">const</span>&amp; newName);</div>
-<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span></div>
-<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a8aa2d37f07d66421751edb97a9b721f2">createConnection</a>(std::string <span class="keyword">const</span>&amp; startInstanceName, std::string <span class="keyword">const</span>&amp; startBus,</div>
-<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>        std::string <span class="keyword">const</span>&amp; endInstanceName, std::string <span class="keyword">const</span>&amp; endBus);</div>
-<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span></div>
-<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#ad5b88413b3192fd5488131e639937a38">createHierarchicalConnection</a>(std::string <span class="keyword">const</span>&amp; instanceName, std::string <span class="keyword">const</span>&amp; instanceBus,</div>
-<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>        std::string <span class="keyword">const</span>&amp; topBus);</div>
-<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span></div>
-<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a9f24b7b91e0bfda4b1b79923d00f2471">removeInstanceConnection</a>(std::string <span class="keyword">const</span>&amp; startInstanceName, std::string <span class="keyword">const</span>&amp; startBus,</div>
-<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>        std::string <span class="keyword">const</span>&amp; endInstanceName, std::string <span class="keyword">const</span>&amp; endBus);</div>
-<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span></div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a1eddcd134f8a8400be5fe959488f5f68">removeHierarchicalConnection</a>(std::string <span class="keyword">const</span>&amp; instanceName, std::string <span class="keyword">const</span>&amp; instanceBus,</div>
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>        std::string <span class="keyword">const</span>&amp; topBus);</div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span></div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#af519ddba6a6e2d3d4aa371866515d9ad">renameConnection</a>(std::string <span class="keyword">const</span>&amp; currentName, std::string <span class="keyword">const</span>&amp; newName);</div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span></div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#ac1f2b9a5238494c47930f3d4ae69726c">createAdHocConnection</a>(std::string <span class="keyword">const</span>&amp; startInstanceName, std::string <span class="keyword">const</span>&amp; startPort,</div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        std::string <span class="keyword">const</span>&amp; endInstanceName, std::string <span class="keyword">const</span>&amp; endPort);</div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span></div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a9ffbf2f0316715321f09c384d214c1d0">createHierarchicalAdHocConnection</a>(std::string <span class="keyword">const</span>&amp; instanceName, std::string <span class="keyword">const</span>&amp; instancePort,</div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>        std::string <span class="keyword">const</span>&amp; topPort);</div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span></div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a9d0d7d44a499d5bcd246b47fc59a293b">removeInstanceAdHocConnection</a>(std::string <span class="keyword">const</span>&amp; startInstanceName, std::string <span class="keyword">const</span>&amp; startPort,</div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>        std::string <span class="keyword">const</span>&amp; endInstanceName, std::string <span class="keyword">const</span>&amp; endPort);</div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span></div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a8a631bda2a79413f1bed10d3dc94b67c">removeHierarchicalAdHocConnection</a>(std::string <span class="keyword">const</span>&amp; instanceName, std::string <span class="keyword">const</span>&amp; instancePort,</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>        std::string <span class="keyword">const</span>&amp; topPort);</div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span></div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a12328c6d473e878e67bb78042d76e908">renameAdHocConnection</a>(std::string <span class="keyword">const</span>&amp; currentName, std::string <span class="keyword">const</span>&amp; newName);</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span> </div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span></div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    <span class="keywordtype">bool</span> connectionEndsCheck(QString <span class="keyword">const</span>&amp; startInstanceName, QString <span class="keyword">const</span>&amp; startBus,</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>        QString <span class="keyword">const</span>&amp; endInstanceName, QString <span class="keyword">const</span>&amp; endBus, <span class="keywordtype">bool</span> isAdHocConnection);</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span></div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    <span class="keywordtype">bool</span> instanceExists(QString <span class="keyword">const</span>&amp; instanceName) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span></div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    <span class="keywordtype">bool</span> endsCheckForAdHoc(QSharedPointer&lt;const Component&gt; startComponent, QString <span class="keyword">const</span>&amp; startBus,</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>        QString <span class="keyword">const</span>&amp; startInstanceName, QSharedPointer&lt;const Component&gt; endComponent, QString <span class="keyword">const</span>&amp; endBus,</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>        QString <span class="keyword">const</span>&amp; endInstanceName);</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span></div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    <span class="keywordtype">bool</span> endsCheckForInterconnection(QSharedPointer&lt;const Component&gt; startComponent, QString <span class="keyword">const</span>&amp; startBus,</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>        QString <span class="keyword">const</span>&amp; startInstanceName, QSharedPointer&lt;const Component&gt; endComponent, QString <span class="keyword">const</span>&amp; endBus,</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>        QString <span class="keyword">const</span>&amp; endInstanceName);</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span></div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    <span class="keywordtype">bool</span> removeConnection(std::string <span class="keyword">const</span>&amp; connectionName);</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span></div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <span class="keywordtype">bool</span> removeAdHocConnection(std::string <span class="keyword">const</span>&amp; connectionName);</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span></div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>    QSharedPointer&lt;Document&gt; getDocument(QString <span class="keyword">const</span>&amp; vlnvString) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span></div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>    <span class="keywordtype">void</span> constructMemoryValidators();</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span></div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>    <span class="keywordtype">void</span> constructMemoryInterface();</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span></div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>    <span class="keywordtype">void</span> constructFileSetInterface();</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span></div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>    QSharedPointer&lt;MemoryMap&gt; getMemoryMap(QString <span class="keyword">const</span>&amp; mapName) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span></div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>    QSharedPointer&lt;AddressBlock&gt; getAddressBock(QSharedPointer&lt;MemoryMap&gt; containingMap, QString <span class="keyword">const</span>&amp; blockName)</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>        <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span></div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>    QSharedPointer&lt;Register&gt; getRegister(QSharedPointer&lt;AddressBlock&gt; containingBlock, QString <span class="keyword">const</span>&amp; registerName)</div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>        <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span></div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>    QSharedPointer&lt;Field&gt; getField(QSharedPointer&lt;Register&gt; containingRegister, QString <span class="keyword">const</span>&amp; fieldName) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span></div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    QSharedPointer&lt;FileSet&gt; getFileSet(QString <span class="keyword">const</span>&amp; setName) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span></div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>    <span class="keywordtype">void</span> sendMemoryMapNotFoundError(QString <span class="keyword">const</span>&amp; mapName) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span></div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>    <span class="keywordtype">void</span> sendAddressBlockNotFoundError(QString <span class="keyword">const</span>&amp; mapName, QString <span class="keyword">const</span>&amp; blockName) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span></div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    <span class="keywordtype">void</span> sendRegisterNotFoundError(QString <span class="keyword">const</span>&amp; mapName, QString <span class="keyword">const</span>&amp; blockName, QString <span class="keyword">const</span>&amp; registerName)</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>        <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span></div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    <span class="keywordtype">void</span> sendFieldNotFoundError(QString <span class="keyword">const</span>&amp; mapName, QString <span class="keyword">const</span>&amp; blockName, QString <span class="keyword">const</span>&amp; registerName,</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>        QString <span class="keyword">const</span>&amp; fieldName) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span></div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>    <span class="keywordtype">void</span> sendFileSetNotFoundError(QString <span class="keyword">const</span>&amp; setName) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span> </div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>    <span class="comment">//-----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>    <span class="comment">// Data.</span></div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    <span class="comment">//-----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span></div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    <a class="code hl_class" href="classLibraryInterface.html">LibraryInterface</a>* library_{ KactusAPI::getLibrary() };</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span></div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>    <a class="code hl_class" href="classMessageMediator.html">MessageMediator</a>* messager_{ KactusAPI::getMessageChannel() };</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span></div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>    QSharedPointer&lt;ComponentParameterFinder&gt; parameterFinder_{ <span class="keyword">new</span> ComponentAndInstantiationsParameterFinder(<span class="keyword">nullptr</span>) };</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span></div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    QSharedPointer&lt;ExpressionParser&gt; expressionParser_{ <span class="keyword">new</span> IPXactSystemVerilogParser(parameterFinder_) };</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span></div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>    QSharedPointer&lt;ExpressionFormatter&gt;expressionFormatter_{ <span class="keyword">new</span> ExpressionFormatter(parameterFinder_) };</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span></div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>    QSharedPointer&lt;Component&gt; activeComponent_{ <span class="keyword">nullptr</span> };</div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span></div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    QSharedPointer&lt;Design&gt; activeDesign_{ <span class="keyword">nullptr</span> };</div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span></div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    QSharedPointer&lt;PortValidator&gt; portValidator_{ <span class="keyword">new</span> PortValidator(expressionParser_,</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>        QSharedPointer&lt;QList&lt;QSharedPointer&lt;View&gt; &gt; &gt;()) };</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span></div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>    QSharedPointer&lt;ParameterValidator&gt; parameterValidator_{ <span class="keyword">new</span> ParameterValidator(expressionParser_,</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>        QSharedPointer&lt;QList&lt;QSharedPointer&lt;Choice&gt; &gt; &gt;(), Document::Revision::Std22) };</div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span></div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>    QSharedPointer&lt;MemoryMapValidator&gt; mapValidator_{ <span class="keyword">nullptr</span> };</div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span></div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    PortsInterface* portsInterface_{ <span class="keyword">new</span> PortsInterface(portValidator_, expressionParser_, expressionFormatter_) };</div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span></div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    BusInterfaceInterface* busInterface_{ <a class="code hl_function" href="namespaceBusInterfaceInterfaceFactory.html#a557592051334d3af147ef6db6d15f970">BusInterfaceInterfaceFactory::createBusInterface</a>(parameterFinder_,</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>        expressionFormatter_, expressionParser_,</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>        QSharedPointer&lt;Component&gt;(<span class="keyword">new</span> Component(VLNV(), Document::Revision::Unknown)), library_) };</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span></div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>    ParametersInterface* componentParameterInterface_{ <span class="keyword">new</span> ParametersInterface(parameterValidator_, </div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>        expressionParser_, expressionFormatter_) };</div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span></div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>    MemoryMapInterface* mapInterface_{ <span class="keyword">nullptr</span> };</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span></div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    FileSetInterface* fileSetInterface_{ <span class="keyword">nullptr</span> };</div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span></div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>    InterconnectionInterface* connectionInterface_{ <span class="keyword">new</span> InterconnectionInterface() };</div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span></div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>    AdHocConnectionInterface* adhocConnectionInterface_{ <span class="keyword">new</span> AdHocConnectionInterface() };</div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span></div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>    ComponentInstanceInterface* instanceInterface_{ <span class="keyword">new</span> ComponentInstanceInterface(connectionInterface_, </div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>        adhocConnectionInterface_) };</div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span> </div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>};</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_function" href="classPythonAPI.html#a7ae0ca9123c0f4a99438eed85b028342">PythonAPI</a>();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classPythonAPI.html#a91afddcf573417e8ed01e580a43de3d8">   87</a></span>    <a class="code hl_function" href="classPythonAPI.html#a91afddcf573417e8ed01e580a43de3d8">~PythonAPI</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>   </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    std::string <a class="code hl_function" href="classPythonAPI.html#a079684bc9f0061433b23b0326747c493">getVersion</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    std::vector&lt;std::string&gt; <a class="code hl_function" href="classPythonAPI.html#a50d51ea8915f74240807252e04d8b138">getActiveLibraryPaths</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    std::vector&lt;std::string&gt; <a class="code hl_function" href="classPythonAPI.html#acb230e230fb19cd7c5f2e6926d501aa2">getAllLibraryPaths</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a416c644a5025e4962cd83723665ef696">setLibraryPathActive</a>(std::string <span class="keyword">const</span>&amp; path, <span class="keywordtype">bool</span> isActive);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#aa3766d815d8802b9d5814906971be982">addLibraryPath</a>(std::string <span class="keyword">const</span>&amp; path, <span class="keywordtype">bool</span> isActive = <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a27ef686e76a114dce39a82a10b916d72">removeLibraryPath</a>(std::string <span class="keyword">const</span>&amp; path);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <a class="code hl_class" href="classPortsInterface.html">PortsInterface</a>* <a class="code hl_function" href="classPythonAPI.html#a5114d9c7403806e8928254623e12a938">getPortsInterface</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <a class="code hl_class" href="classParametersInterface.html">ParametersInterface</a>* <a class="code hl_function" href="classPythonAPI.html#a5988a253918fd413eb65416d4e6fe684">getComponentParameterInterface</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <a class="code hl_class" href="classMemoryMapInterface.html">MemoryMapInterface</a>* <a class="code hl_function" href="classPythonAPI.html#af831bbb58fedfc05f534b6eb3fe93013">getMapInterface</a>();</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <a class="code hl_class" href="classFileSetInterface.html">FileSetInterface</a>* <a class="code hl_function" href="classPythonAPI.html#a5d754870c3620ccd10f2790400e2255b">getFileSetInterface</a>();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <a class="code hl_class" href="classBusInterfaceInterface.html">BusInterfaceInterface</a>* <a class="code hl_function" href="classPythonAPI.html#a47a32689731b3cd970883510ab4d0042">getBusInterface</a>();</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a0baab6893b11452f90c8b75da65ae2ba">setupLibrary</a>(std::string <span class="keyword">const</span>&amp; settingsFileString);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a9cebaa2f0bc167dda6d2ef099fdc26e2">setLibraryPaths</a>(std::vector&lt;std::string&gt; <span class="keyword">const</span>&amp; paths) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    std::string <a class="code hl_function" href="classPythonAPI.html#ae44840299315dc3c5a8f1cb2415bd880">getDefaultLibraryPath</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a5ebc69a0b48d778313617eaddc8f17b7">setDefaultLibraryPath</a>(std::string <span class="keyword">const</span>&amp; path) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classPythonAPI.html#a9d1a7834c857c6f51503620d78245a6d">importFile</a>(std::string <span class="keyword">const</span>&amp; path, std::string <span class="keyword">const</span>&amp; vlnv, <span class="keywordtype">bool</span> overwrite = <span class="keyword">false</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>     <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a68b0d100465842caca5f2cd4f9ea7447">generate</a>(std::string <span class="keyword">const</span>&amp; format, std::string <span class="keyword">const</span>&amp; vlnv, std::string <span class="keyword">const</span>&amp; viewName,</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        std::string <span class="keyword">const</span>&amp; outputDirectory) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>     <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a63c50a92e3b5356c8aef1a8fa61d8e06">generateInterconnect</a>();</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classPythonAPI.html#af2ea6e848f24bbd77cad75d31da54d36">getFileCount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    std::vector&lt;std::string&gt; <a class="code hl_function" href="classPythonAPI.html#a52b7a23c4085f34f775d2a4d6ce20a61">listVLNVs</a>(std::string <span class="keyword">const</span>&amp; vendor = std::string()) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    std::vector&lt;std::string&gt; <a class="code hl_function" href="classPythonAPI.html#a681e6bf59e7807b2992d2cd13e5cdc0e">listComponentVLNVs</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#ad5a33e84cd00a21e58fe9d9f1b8f480d">vlnvExistsInLibrary</a>(std::string <span class="keyword">const</span>&amp; vendor, std::string <span class="keyword">const</span>&amp; library, std::string <span class="keyword">const</span>&amp; name,</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        std::string <span class="keyword">const</span>&amp; version) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a5bbd8d89317a50ed9000692321229b77">createComponent</a>(std::string <span class="keyword">const</span>&amp; vendor, std::string <span class="keyword">const</span>&amp; library, std::string <span class="keyword">const</span>&amp; name,</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        std::string <span class="keyword">const</span>&amp; version, <a class="code hl_enumeration" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918d">StdRev</a> revision = <a class="code hl_enumvalue" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918daea543842c91e3af3c4322e0e71ca0ee7">StdRev::Std22</a>);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    std::string <a class="code hl_function" href="classPythonAPI.html#acca292206ba5c68b874d18980576107c">getVLNVDirectory</a>(std::string <span class="keyword">const</span>&amp; vendor, std::string <span class="keyword">const</span>&amp; library, std::string <span class="keyword">const</span>&amp; name,</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        std::string <span class="keyword">const</span>&amp; version) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    std::string <a class="code hl_function" href="classPythonAPI.html#a2be07d74726ed26c62c255200d4df627">getFirstViewName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a311926338ac81d14db6e87ed1b5ebeda">openComponent</a>(std::string <span class="keyword">const</span>&amp; vlnvString);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#ab208db17c416ee3cb0a24c73a7438d15">closeOpenComponent</a>();</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span></div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    std::string <a class="code hl_function" href="classPythonAPI.html#aea6434bf0ed3442ddefcfed8ad9ab1be">getComponentName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    std::string <a class="code hl_function" href="classPythonAPI.html#a38f22d43aee4a47a2ddff01e33958db3">getComponentDescription</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    std::string <a class="code hl_function" href="classPythonAPI.html#a971ae423fd36c159f904893330da0d58">getComponentStdRevision</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a5fdb37050859bc9c91f9fec00d5e5eea">saveComponent</a>();</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a5c722dac614eefc98c697c10f86e3d48">setBlocksForInterface</a>(std::string <span class="keyword">const</span>&amp; mapName);</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a4e652bbd0ea60fc63b5afbb542a21e80">setRegistersForInterface</a>(std::string <span class="keyword">const</span>&amp; mapName, std::string <span class="keyword">const</span>&amp; blockName);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a550e6e022459dd8f976cc96c75bbe399">setFieldsForInterface</a>(std::string <span class="keyword">const</span>&amp; mapName, std::string <span class="keyword">const</span>&amp; blockName,</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        std::string <span class="keyword">const</span>&amp; registerName);</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a8149930733c74427614e5c3a34190e0a">setResetsForInterface</a>(std::string <span class="keyword">const</span>&amp; mapName, std::string <span class="keyword">const</span>&amp; blockName,</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>        std::string <span class="keyword">const</span>&amp; registerName, std::string <span class="keyword">const</span>&amp; fieldName);</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#a72f5c6a7a35c7de062e20db09bfe2b1d">setFilesForInterface</a>(std::string <span class="keyword">const</span>&amp; setName);</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span></div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#af4d47ebe047f032ce5b27ee207c31a7f">setFileBuildersForInterface</a>(std::string <span class="keyword">const</span>&amp; setName);</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        </div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#adfbbacd7b681629a5465d19ae09b148c">createDesign</a>(std::string <span class="keyword">const</span>&amp; vendor, std::string <span class="keyword">const</span>&amp; library, std::string <span class="keyword">const</span>&amp; name,</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>        std::string <span class="keyword">const</span>&amp; version, <a class="code hl_enumeration" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918d">StdRev</a> revision = <a class="code hl_enumvalue" href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918daea543842c91e3af3c4322e0e71ca0ee7">StdRev::Std22</a>);</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    </div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    std::string <a class="code hl_function" href="classPythonAPI.html#a76e6dbc579a6f7aa03646610abbedeb3">getDesignStdRevision</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span></div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#afae64475954faa45d272b75c0a67de88">openDesign</a>(std::string <span class="keyword">const</span>&amp; vlnvString);</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span></div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#ae26eb7a85b03b5ba8a04565c9ea712b2">closeOpenDesign</a>();</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span></div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPythonAPI.html#af0fcb19712c24cdf37800ce5ba7e2408">saveDesign</a>();</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span></div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#ab151e5e284a634dce73427d924439f27">addComponentInstance</a>(std::string <span class="keyword">const</span>&amp; vlnvString, std::string <span class="keyword">const</span>&amp; instanceName);</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span></div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a154a345e2af1fc80311716af88d932df">removeComponentInstance</a>(std::string <span class="keyword">const</span>&amp; instanceName);</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span></div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a09c4fa69fff38a23d8d1546285c8423e">removeInstanceConnections</a>(std::string <span class="keyword">const</span>&amp; instanceName);</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span></div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a908e5b91a115a2d3503641e8f1d5fcc4">removeInstanceAdHocConnections</a>(std::string <span class="keyword">const</span>&amp; instanceName);</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span></div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a29102bd5f9020593b0b1c36bd37c49b6">renameInstance</a>(std::string <span class="keyword">const</span>&amp; currentName, std::string <span class="keyword">const</span>&amp; newName);</div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span></div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a8aa2d37f07d66421751edb97a9b721f2">createConnection</a>(std::string <span class="keyword">const</span>&amp; startInstanceName, std::string <span class="keyword">const</span>&amp; startBus,</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>        std::string <span class="keyword">const</span>&amp; endInstanceName, std::string <span class="keyword">const</span>&amp; endBus);</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span></div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#ad5b88413b3192fd5488131e639937a38">createHierarchicalConnection</a>(std::string <span class="keyword">const</span>&amp; instanceName, std::string <span class="keyword">const</span>&amp; instanceBus,</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>        std::string <span class="keyword">const</span>&amp; topBus);</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span></div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a9f24b7b91e0bfda4b1b79923d00f2471">removeInstanceConnection</a>(std::string <span class="keyword">const</span>&amp; startInstanceName, std::string <span class="keyword">const</span>&amp; startBus,</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>        std::string <span class="keyword">const</span>&amp; endInstanceName, std::string <span class="keyword">const</span>&amp; endBus);</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span></div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a1eddcd134f8a8400be5fe959488f5f68">removeHierarchicalConnection</a>(std::string <span class="keyword">const</span>&amp; instanceName, std::string <span class="keyword">const</span>&amp; instanceBus,</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>        std::string <span class="keyword">const</span>&amp; topBus);</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span></div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#af519ddba6a6e2d3d4aa371866515d9ad">renameConnection</a>(std::string <span class="keyword">const</span>&amp; currentName, std::string <span class="keyword">const</span>&amp; newName);</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span></div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#ac1f2b9a5238494c47930f3d4ae69726c">createAdHocConnection</a>(std::string <span class="keyword">const</span>&amp; startInstanceName, std::string <span class="keyword">const</span>&amp; startPort,</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>        std::string <span class="keyword">const</span>&amp; endInstanceName, std::string <span class="keyword">const</span>&amp; endPort);</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span></div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a9ffbf2f0316715321f09c384d214c1d0">createHierarchicalAdHocConnection</a>(std::string <span class="keyword">const</span>&amp; instanceName, std::string <span class="keyword">const</span>&amp; instancePort,</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>        std::string <span class="keyword">const</span>&amp; topPort);</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span></div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a9d0d7d44a499d5bcd246b47fc59a293b">removeInstanceAdHocConnection</a>(std::string <span class="keyword">const</span>&amp; startInstanceName, std::string <span class="keyword">const</span>&amp; startPort,</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>        std::string <span class="keyword">const</span>&amp; endInstanceName, std::string <span class="keyword">const</span>&amp; endPort);</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span></div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a8a631bda2a79413f1bed10d3dc94b67c">removeHierarchicalAdHocConnection</a>(std::string <span class="keyword">const</span>&amp; instanceName, std::string <span class="keyword">const</span>&amp; instancePort,</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>        std::string <span class="keyword">const</span>&amp; topPort);</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span></div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classPythonAPI.html#a12328c6d473e878e67bb78042d76e908">renameAdHocConnection</a>(std::string <span class="keyword">const</span>&amp; currentName, std::string <span class="keyword">const</span>&amp; newName);</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span> </div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span></div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    <span class="keywordtype">bool</span> connectionEndsCheck(QString <span class="keyword">const</span>&amp; startInstanceName, QString <span class="keyword">const</span>&amp; startBus,</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>        QString <span class="keyword">const</span>&amp; endInstanceName, QString <span class="keyword">const</span>&amp; endBus, <span class="keywordtype">bool</span> isAdHocConnection);</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span></div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>    <span class="keywordtype">bool</span> instanceExists(QString <span class="keyword">const</span>&amp; instanceName) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span></div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>    <span class="keywordtype">bool</span> endsCheckForAdHoc(QSharedPointer&lt;const Component&gt; startComponent, QString <span class="keyword">const</span>&amp; startBus,</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>        QString <span class="keyword">const</span>&amp; startInstanceName, QSharedPointer&lt;const Component&gt; endComponent, QString <span class="keyword">const</span>&amp; endBus,</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>        QString <span class="keyword">const</span>&amp; endInstanceName);</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span></div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    <span class="keywordtype">bool</span> endsCheckForInterconnection(QSharedPointer&lt;const Component&gt; startComponent, QString <span class="keyword">const</span>&amp; startBus,</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>        QString <span class="keyword">const</span>&amp; startInstanceName, QSharedPointer&lt;const Component&gt; endComponent, QString <span class="keyword">const</span>&amp; endBus,</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>        QString <span class="keyword">const</span>&amp; endInstanceName);</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span></div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    <span class="keywordtype">bool</span> removeConnection(std::string <span class="keyword">const</span>&amp; connectionName);</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span></div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>    <span class="keywordtype">bool</span> removeAdHocConnection(std::string <span class="keyword">const</span>&amp; connectionName);</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span></div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>    QSharedPointer&lt;Document&gt; getDocument(QString <span class="keyword">const</span>&amp; vlnvString) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span></div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>    <span class="keywordtype">void</span> constructMemoryValidators();</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span></div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>    <span class="keywordtype">void</span> constructMemoryInterface();</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span></div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    <span class="keywordtype">void</span> constructFileSetInterface();</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span></div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>    QSharedPointer&lt;MemoryMap&gt; getMemoryMap(QString <span class="keyword">const</span>&amp; mapName) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span></div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>    QSharedPointer&lt;AddressBlock&gt; getAddressBock(QSharedPointer&lt;MemoryMap&gt; containingMap, QString <span class="keyword">const</span>&amp; blockName)</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>        <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span></div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>    QSharedPointer&lt;Register&gt; getRegister(QSharedPointer&lt;AddressBlock&gt; containingBlock, QString <span class="keyword">const</span>&amp; registerName)</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>        <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span></div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>    QSharedPointer&lt;Field&gt; getField(QSharedPointer&lt;Register&gt; containingRegister, QString <span class="keyword">const</span>&amp; fieldName) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span></div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    QSharedPointer&lt;FileSet&gt; getFileSet(QString <span class="keyword">const</span>&amp; setName) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span></div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>    <span class="keywordtype">void</span> sendMemoryMapNotFoundError(QString <span class="keyword">const</span>&amp; mapName) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span></div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    <span class="keywordtype">void</span> sendAddressBlockNotFoundError(QString <span class="keyword">const</span>&amp; mapName, QString <span class="keyword">const</span>&amp; blockName) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span></div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    <span class="keywordtype">void</span> sendRegisterNotFoundError(QString <span class="keyword">const</span>&amp; mapName, QString <span class="keyword">const</span>&amp; blockName, QString <span class="keyword">const</span>&amp; registerName)</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>        <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span></div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    <span class="keywordtype">void</span> sendFieldNotFoundError(QString <span class="keyword">const</span>&amp; mapName, QString <span class="keyword">const</span>&amp; blockName, QString <span class="keyword">const</span>&amp; registerName,</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>        QString <span class="keyword">const</span>&amp; fieldName) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span></div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>    <span class="keywordtype">void</span> sendFileSetNotFoundError(QString <span class="keyword">const</span>&amp; setName) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span> </div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>    <span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    <span class="comment">// Data.</span></div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>    <span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span></div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    <a class="code hl_class" href="classLibraryInterface.html">LibraryInterface</a>* library_{ KactusAPI::getLibrary() };</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span></div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    <a class="code hl_class" href="classMessageMediator.html">MessageMediator</a>* messager_{ KactusAPI::getMessageChannel() };</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span></div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    QSharedPointer&lt;ComponentParameterFinder&gt; parameterFinder_{ <span class="keyword">new</span> ComponentAndInstantiationsParameterFinder(<span class="keyword">nullptr</span>) };</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span></div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>    QSharedPointer&lt;ExpressionParser&gt; expressionParser_{ <span class="keyword">new</span> IPXactSystemVerilogParser(parameterFinder_) };</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span></div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    QSharedPointer&lt;ExpressionFormatter&gt;expressionFormatter_{ <span class="keyword">new</span> ExpressionFormatter(parameterFinder_) };</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span></div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>    QSharedPointer&lt;Component&gt; activeComponent_{ <span class="keyword">nullptr</span> };</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span></div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    QSharedPointer&lt;Design&gt; activeDesign_{ <span class="keyword">nullptr</span> };</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span></div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>    QSharedPointer&lt;PortValidator&gt; portValidator_{ <span class="keyword">new</span> PortValidator(expressionParser_,</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>        QSharedPointer&lt;QList&lt;QSharedPointer&lt;View&gt; &gt; &gt;()) };</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span></div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    QSharedPointer&lt;ParameterValidator&gt; parameterValidator_{ <span class="keyword">new</span> ParameterValidator(expressionParser_,</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>        QSharedPointer&lt;QList&lt;QSharedPointer&lt;Choice&gt; &gt; &gt;(), Document::Revision::Std22) };</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span></div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>    QSharedPointer&lt;MemoryMapValidator&gt; mapValidator_{ <span class="keyword">nullptr</span> };</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span></div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>    PortsInterface* portsInterface_{ <span class="keyword">new</span> PortsInterface(portValidator_, expressionParser_, expressionFormatter_) };</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span></div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>    QSharedPointer&lt;ListParameterFinder&gt; absDefFinder_{ <span class="keyword">new</span> ListParameterFinder() };</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span></div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>    QSharedPointer&lt;ExpressionParser&gt; absDefParser_{ <span class="keyword">new</span> IPXactSystemVerilogParser(absDefFinder_)};</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span></div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>    BusInterfaceInterface* busInterface_{ <a class="code hl_function" href="namespaceBusInterfaceInterfaceFactory.html#a42a2e5f3325142389d43760bac374dd7">BusInterfaceInterfaceFactory::createBusInterface</a>(parameterFinder_,</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>        expressionFormatter_, expressionParser_,</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>        absDefFinder_, absDefParser_,</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>        QSharedPointer&lt;Component&gt;(<span class="keyword">new</span> Component(VLNV(), Document::Revision::Unknown)), library_) };</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span></div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>    ParametersInterface* componentParameterInterface_{ <span class="keyword">new</span> ParametersInterface(parameterValidator_, </div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>        expressionParser_, expressionFormatter_) };</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span></div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>    MemoryMapInterface* mapInterface_{ <span class="keyword">nullptr</span> };</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span></div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>    FileSetInterface* fileSetInterface_{ <span class="keyword">nullptr</span> };</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span></div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>    InterconnectionInterface* connectionInterface_{ <span class="keyword">new</span> InterconnectionInterface() };</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span></div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    AdHocConnectionInterface* adhocConnectionInterface_{ <span class="keyword">new</span> AdHocConnectionInterface() };</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span></div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>    ComponentInstanceInterface* instanceInterface_{ <span class="keyword">new</span> ComponentInstanceInterface(connectionInterface_, </div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>        adhocConnectionInterface_) };</div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span> </div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>};</div>
 </div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span> </div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span><span class="preprocessor">#endif </span><span class="comment">// !PYTHON_API_H</span></div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span> </div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span><span class="preprocessor">#endif </span><span class="comment">// !PYTHON_API_H</span></div>
 <div class="ttc" id="aAdHocConnectionInterface_8h_html"><div class="ttname"><a href="AdHocConnectionInterface_8h.html">AdHocConnectionInterface.h</a></div></div>
 <div class="ttc" id="aBusInterfaceInterfaceFactory_8h_html"><div class="ttname"><a href="BusInterfaceInterfaceFactory_8h.html">BusInterfaceInterfaceFactory.h</a></div></div>
 <div class="ttc" id="aBusInterfaceInterface_8h_html"><div class="ttname"><a href="BusInterfaceInterface_8h.html">BusInterfaceInterface.h</a></div></div>
@@ -430,6 +436,7 @@ $(function(){initNavTree('PythonAPI_8h_source.html',''); initResizable(true); })
 <div class="ttc" id="aExpressionFormatter_8h_html"><div class="ttname"><a href="ExpressionFormatter_8h.html">ExpressionFormatter.h</a></div></div>
 <div class="ttc" id="aIPXactSystemVerilogParser_8h_html"><div class="ttname"><a href="IPXactSystemVerilogParser_8h.html">IPXactSystemVerilogParser.h</a></div></div>
 <div class="ttc" id="aInterconnectionInterface_8h_html"><div class="ttname"><a href="InterconnectionInterface_8h.html">InterconnectionInterface.h</a></div></div>
+<div class="ttc" id="aListParameterFinder_8h_html"><div class="ttname"><a href="ListParameterFinder_8h.html">ListParameterFinder.h</a></div></div>
 <div class="ttc" id="aParametersInterface_8h_html"><div class="ttname"><a href="ParametersInterface_8h.html">ParametersInterface.h</a></div></div>
 <div class="ttc" id="aPortsInterface_8h_html"><div class="ttname"><a href="PortsInterface_8h.html">PortsInterface.h</a></div></div>
 <div class="ttc" id="aclassBusInterfaceInterface_html"><div class="ttname"><a href="classBusInterfaceInterface.html">BusInterfaceInterface</a></div><div class="ttdoc">Interface for accessing bus interfaces.</div><div class="ttdef"><b>Definition</b> <a href="BusInterfaceInterface_8h_source.html#l00040">BusInterfaceInterface.h:41</a></div></div>
@@ -491,9 +498,9 @@ $(function(){initNavTree('PythonAPI_8h_source.html',''); initResizable(true); })
 <div class="ttc" id="aclassPythonAPI_html_acca292206ba5c68b874d18980576107c"><div class="ttname"><a href="classPythonAPI.html#acca292206ba5c68b874d18980576107c">PythonAPI::getVLNVDirectory</a></div><div class="ttdeci">std::string getVLNVDirectory(std::string const &amp;vendor, std::string const &amp;library, std::string const &amp;name, std::string const &amp;version) const</div><div class="ttdef"><b>Definition</b> <a href="PythonAPI_8cpp_source.html#l00402">PythonAPI.cpp:402</a></div></div>
 <div class="ttc" id="aclassPythonAPI_html_ad5a33e84cd00a21e58fe9d9f1b8f480d"><div class="ttname"><a href="classPythonAPI.html#ad5a33e84cd00a21e58fe9d9f1b8f480d">PythonAPI::vlnvExistsInLibrary</a></div><div class="ttdeci">bool vlnvExistsInLibrary(std::string const &amp;vendor, std::string const &amp;library, std::string const &amp;name, std::string const &amp;version) const</div><div class="ttdef"><b>Definition</b> <a href="PythonAPI_8cpp_source.html#l00332">PythonAPI.cpp:332</a></div></div>
 <div class="ttc" id="aclassPythonAPI_html_ad5b88413b3192fd5488131e639937a38"><div class="ttname"><a href="classPythonAPI.html#ad5b88413b3192fd5488131e639937a38">PythonAPI::createHierarchicalConnection</a></div><div class="ttdeci">bool createHierarchicalConnection(std::string const &amp;instanceName, std::string const &amp;instanceBus, std::string const &amp;topBus)</div><div class="ttdef"><b>Definition</b> <a href="PythonAPI_8cpp_source.html#l01217">PythonAPI.cpp:1217</a></div></div>
-<div class="ttc" id="aclassPythonAPI_html_adf9f13e5c7a7070c1055c81c16b8918d"><div class="ttname"><a href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918d">PythonAPI::StdRev</a></div><div class="ttdeci">StdRev</div><div class="ttdef"><b>Definition</b> <a href="#l00072">PythonAPI.h:73</a></div></div>
-<div class="ttc" id="aclassPythonAPI_html_adf9f13e5c7a7070c1055c81c16b8918da14995e4cbb3538373825582ae201d8cb"><div class="ttname"><a href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918da14995e4cbb3538373825582ae201d8cb">PythonAPI::Std14</a></div><div class="ttdeci">@ Std14</div><div class="ttdef"><b>Definition</b> <a href="#l00074">PythonAPI.h:74</a></div></div>
-<div class="ttc" id="aclassPythonAPI_html_adf9f13e5c7a7070c1055c81c16b8918daea543842c91e3af3c4322e0e71ca0ee7"><div class="ttname"><a href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918daea543842c91e3af3c4322e0e71ca0ee7">PythonAPI::Std22</a></div><div class="ttdeci">@ Std22</div><div class="ttdef"><b>Definition</b> <a href="#l00075">PythonAPI.h:75</a></div></div>
+<div class="ttc" id="aclassPythonAPI_html_adf9f13e5c7a7070c1055c81c16b8918d"><div class="ttname"><a href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918d">PythonAPI::StdRev</a></div><div class="ttdeci">StdRev</div><div class="ttdef"><b>Definition</b> <a href="#l00073">PythonAPI.h:74</a></div></div>
+<div class="ttc" id="aclassPythonAPI_html_adf9f13e5c7a7070c1055c81c16b8918da14995e4cbb3538373825582ae201d8cb"><div class="ttname"><a href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918da14995e4cbb3538373825582ae201d8cb">PythonAPI::Std14</a></div><div class="ttdeci">@ Std14</div><div class="ttdef"><b>Definition</b> <a href="#l00075">PythonAPI.h:75</a></div></div>
+<div class="ttc" id="aclassPythonAPI_html_adf9f13e5c7a7070c1055c81c16b8918daea543842c91e3af3c4322e0e71ca0ee7"><div class="ttname"><a href="classPythonAPI.html#adf9f13e5c7a7070c1055c81c16b8918daea543842c91e3af3c4322e0e71ca0ee7">PythonAPI::Std22</a></div><div class="ttdeci">@ Std22</div><div class="ttdef"><b>Definition</b> <a href="#l00076">PythonAPI.h:76</a></div></div>
 <div class="ttc" id="aclassPythonAPI_html_adfbbacd7b681629a5465d19ae09b148c"><div class="ttname"><a href="classPythonAPI.html#adfbbacd7b681629a5465d19ae09b148c">PythonAPI::createDesign</a></div><div class="ttdeci">bool createDesign(std::string const &amp;vendor, std::string const &amp;library, std::string const &amp;name, std::string const &amp;version, StdRev revision=StdRev::Std22)</div><div class="ttdef"><b>Definition</b> <a href="PythonAPI_8cpp_source.html#l00916">PythonAPI.cpp:916</a></div></div>
 <div class="ttc" id="aclassPythonAPI_html_ae26eb7a85b03b5ba8a04565c9ea712b2"><div class="ttname"><a href="classPythonAPI.html#ae26eb7a85b03b5ba8a04565c9ea712b2">PythonAPI::closeOpenDesign</a></div><div class="ttdeci">void closeOpenDesign()</div><div class="ttdef"><b>Definition</b> <a href="PythonAPI_8cpp_source.html#l01082">PythonAPI.cpp:1082</a></div></div>
 <div class="ttc" id="aclassPythonAPI_html_ae44840299315dc3c5a8f1cb2415bd880"><div class="ttname"><a href="classPythonAPI.html#ae44840299315dc3c5a8f1cb2415bd880">PythonAPI::getDefaultLibraryPath</a></div><div class="ttdeci">std::string getDefaultLibraryPath() const</div><div class="ttdef"><b>Definition</b> <a href="PythonAPI_8cpp_source.html#l00213">PythonAPI.cpp:213</a></div></div>
@@ -504,7 +511,7 @@ $(function(){initNavTree('PythonAPI_8h_source.html',''); initResizable(true); })
 <div class="ttc" id="aclassPythonAPI_html_af519ddba6a6e2d3d4aa371866515d9ad"><div class="ttname"><a href="classPythonAPI.html#af519ddba6a6e2d3d4aa371866515d9ad">PythonAPI::renameConnection</a></div><div class="ttdeci">bool renameConnection(std::string const &amp;currentName, std::string const &amp;newName)</div><div class="ttdef"><b>Definition</b> <a href="PythonAPI_8cpp_source.html#l01469">PythonAPI.cpp:1469</a></div></div>
 <div class="ttc" id="aclassPythonAPI_html_af831bbb58fedfc05f534b6eb3fe93013"><div class="ttname"><a href="classPythonAPI.html#af831bbb58fedfc05f534b6eb3fe93013">PythonAPI::getMapInterface</a></div><div class="ttdeci">MemoryMapInterface * getMapInterface()</div><div class="ttdef"><b>Definition</b> <a href="PythonAPI_8cpp_source.html#l00175">PythonAPI.cpp:175</a></div></div>
 <div class="ttc" id="aclassPythonAPI_html_afae64475954faa45d272b75c0a67de88"><div class="ttname"><a href="classPythonAPI.html#afae64475954faa45d272b75c0a67de88">PythonAPI::openDesign</a></div><div class="ttdeci">bool openDesign(std::string const &amp;vlnvString)</div><div class="ttdef"><b>Definition</b> <a href="PythonAPI_8cpp_source.html#l01048">PythonAPI.cpp:1048</a></div></div>
-<div class="ttc" id="anamespaceBusInterfaceInterfaceFactory_html_a557592051334d3af147ef6db6d15f970"><div class="ttname"><a href="namespaceBusInterfaceInterfaceFactory.html#a557592051334d3af147ef6db6d15f970">BusInterfaceInterfaceFactory::createBusInterface</a></div><div class="ttdeci">KACTUS2_API BusInterfaceInterface * createBusInterface(QSharedPointer&lt; ParameterFinder &gt; parameterFinder, QSharedPointer&lt; ExpressionFormatter &gt; expressionFormatter, QSharedPointer&lt; ExpressionParser &gt; expressionParser, QSharedPointer&lt; Component &gt; component, LibraryInterface *library)</div></div>
+<div class="ttc" id="anamespaceBusInterfaceInterfaceFactory_html_a42a2e5f3325142389d43760bac374dd7"><div class="ttname"><a href="namespaceBusInterfaceInterfaceFactory.html#a42a2e5f3325142389d43760bac374dd7">BusInterfaceInterfaceFactory::createBusInterface</a></div><div class="ttdeci">KACTUS2_API BusInterfaceInterface * createBusInterface(QSharedPointer&lt; ParameterFinder &gt; componentParameterFinder, QSharedPointer&lt; ExpressionFormatter &gt; componentExpressionFormatter, QSharedPointer&lt; ExpressionParser &gt; componentParameterParser, QSharedPointer&lt; ListFinder &gt; absDefFinder, QSharedPointer&lt; ExpressionParser &gt; absDefParser, QSharedPointer&lt; Component &gt; component, LibraryInterface *library)</div></div>
 <div class="ttc" id="apythonapi__global_8h_html"><div class="ttname"><a href="pythonapi__global_8h.html">pythonapi_global.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

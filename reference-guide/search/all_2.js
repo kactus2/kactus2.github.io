@@ -73,7 +73,7 @@ var searchData=
   ['createallsignals_70',['createAllSignals',['../classPortMapInterface.html#a0963bc7397ad5027ae23f776a6f58a6b',1,'PortMapInterface']]],
   ['createbridgeinterface_71',['createBridgeInterface',['../namespaceBusInterfaceInterfaceFactory_1_1Details.html#a8bd3c3d4b1ec376f5c55ed802ea0e26f',1,'BusInterfaceInterfaceFactory::Details']]],
   ['createbridges_72',['createBridges',['../classBusInterfaceInterface.html#a44095cfdb7bf1991e43752dbc6e60109',1,'BusInterfaceInterface']]],
-  ['createbusinterface_73',['createBusInterface',['../namespaceBusInterfaceInterfaceFactory.html#a557592051334d3af147ef6db6d15f970',1,'BusInterfaceInterfaceFactory']]],
+  ['createbusinterface_73',['createBusInterface',['../namespaceBusInterfaceInterfaceFactory.html#a42a2e5f3325142389d43760bac374dd7',1,'BusInterfaceInterfaceFactory']]],
   ['createchild_74',['createChild',['../classHierarchyItem.html#a91ebe03f27db35f293cb8f3672b13b3d',1,'HierarchyItem::createChild()'],['../classLibraryItem.html#ad5f4e1dc81f1607a2c6b1b4ed5dec0bd',1,'LibraryItem::createChild()']]],
   ['createcommonabstractiontypeinterface_75',['createCommonAbstractionTypeInterface',['../namespaceBusInterfaceInterfaceFactory_1_1Details.html#a2f40198952e613c99ee8d4e30e46ec49',1,'BusInterfaceInterfaceFactory::Details']]],
   ['createcommonbusinterfaceitems_76',['createCommonBusInterfaceItems',['../namespaceBusInterfaceInterfaceFactory_1_1Details.html#ab050f7ff2f3c76f4a8a7318e503835a3',1,'BusInterfaceInterfaceFactory::Details']]],

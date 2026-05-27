@@ -126,7 +126,7 @@ var searchData=
   ['setoutputchannel_123',['setOutputChannel',['../classLibraryHandler.html#aabf64341c6184433f0b4b291dfb86d1f',1,'LibraryHandler']]],
   ['setpackagename_124',['setPackageName',['../classComponentInstantiationInterface.html#ad74d7aade7cfd3e50fd2af6e39390aae',1,'ComponentInstantiationInterface']]],
   ['setparameterinterface_125',['setParameterInterface',['../classBusInterfaceInterface.html#aa9fdef241d89bc1d36a35683bafe6822',1,'BusInterfaceInterface']]],
-  ['setparameterlist_126',['setParameterList',['../classListParameterFinder.html#a5d20cdf9c9448a62463886a91759600a',1,'ListParameterFinder']]],
+  ['setparameterlist_126',['setParameterList',['../classListFinder.html#a3ae3fe082df964d41457c8b8aaf50518',1,'ListFinder::setParameterList()'],['../classListParameterFinder.html#a5d20cdf9c9448a62463886a91759600a',1,'ListParameterFinder::setParameterList()']]],
   ['setparameters_127',['setParameters',['../classParametersInterface.html#ad84e3f7040757c91b772486dbfaed749',1,'ParametersInterface']]],
   ['setpayloadextension_128',['setPayloadExtension',['../classPortAbstractionInterface.html#ab4811298a2a9b156b6b80ebe3053a9a9',1,'PortAbstractionInterface']]],
   ['setpayloadname_129',['setPayloadName',['../classPortAbstractionInterface.html#a08425727cf9f8c496e46a0313656a42f',1,'PortAbstractionInterface']]],

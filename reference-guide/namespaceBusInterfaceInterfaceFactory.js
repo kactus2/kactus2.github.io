@@ -10,5 +10,5 @@ var namespaceBusInterfaceInterfaceFactory =
       [ "createParameterInterface", "namespaceBusInterfaceInterfaceFactory_1_1Details.html#aec6189def0e37bc6bfb154cc2aa40b17", null ],
       [ "createPortMapInterface", "namespaceBusInterfaceInterfaceFactory_1_1Details.html#a603e6b5a17929a388cf830bc770b3a5c", null ]
     ] ],
-    [ "createBusInterface", "namespaceBusInterfaceInterfaceFactory.html#a557592051334d3af147ef6db6d15f970", null ]
+    [ "createBusInterface", "namespaceBusInterfaceInterfaceFactory.html#a42a2e5f3325142389d43760bac374dd7", null ]
 ];

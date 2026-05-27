@@ -122,14 +122,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a557592051334d3af147ef6db6d15f970" id="r_a557592051334d3af147ef6db6d15f970"><td class="memItemLeft" align="right" valign="top">KACTUS2_API <a class="el" href="classBusInterfaceInterface.html">BusInterfaceInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a557592051334d3af147ef6db6d15f970">createBusInterface</a> (QSharedPointer&lt; <a class="el" href="classParameterFinder.html">ParameterFinder</a> &gt; parameterFinder, QSharedPointer&lt; <a class="el" href="classExpressionFormatter.html">ExpressionFormatter</a> &gt; expressionFormatter, QSharedPointer&lt; <a class="el" href="classExpressionParser.html">ExpressionParser</a> &gt; expressionParser, QSharedPointer&lt; Component &gt; component, <a class="el" href="classLibraryInterface.html">LibraryInterface</a> *library)</td></tr>
-<tr class="separator:a557592051334d3af147ef6db6d15f970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a2e5f3325142389d43760bac374dd7" id="r_a42a2e5f3325142389d43760bac374dd7"><td class="memItemLeft" align="right" valign="top">KACTUS2_API <a class="el" href="classBusInterfaceInterface.html">BusInterfaceInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42a2e5f3325142389d43760bac374dd7">createBusInterface</a> (QSharedPointer&lt; <a class="el" href="classParameterFinder.html">ParameterFinder</a> &gt; componentParameterFinder, QSharedPointer&lt; <a class="el" href="classExpressionFormatter.html">ExpressionFormatter</a> &gt; componentExpressionFormatter, QSharedPointer&lt; <a class="el" href="classExpressionParser.html">ExpressionParser</a> &gt; componentParameterParser, QSharedPointer&lt; <a class="el" href="classListFinder.html">ListFinder</a> &gt; absDefFinder, QSharedPointer&lt; <a class="el" href="classExpressionParser.html">ExpressionParser</a> &gt; absDefParser, QSharedPointer&lt; Component &gt; component, <a class="el" href="classLibraryInterface.html">LibraryInterface</a> *library)</td></tr>
+<tr class="separator:a42a2e5f3325142389d43760bac374dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Constructs the bus interface interface. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a557592051334d3af147ef6db6d15f970" name="a557592051334d3af147ef6db6d15f970"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a557592051334d3af147ef6db6d15f970">&#9670;&#160;</a></span>createBusInterface()</h2>
+<a id="a42a2e5f3325142389d43760bac374dd7" name="a42a2e5f3325142389d43760bac374dd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a2e5f3325142389d43760bac374dd7">&#9670;&#160;</a></span>createBusInterface()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,17 +137,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">KACTUS2_API <a class="el" href="classBusInterfaceInterface.html">BusInterfaceInterface</a> * BusInterfaceInterfaceFactory::createBusInterface </td>
           <td>(</td>
-          <td class="paramtype">QSharedPointer&lt; <a class="el" href="classParameterFinder.html">ParameterFinder</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>parameterFinder</em></span>, </td>
+          <td class="paramtype">QSharedPointer&lt; <a class="el" href="classParameterFinder.html">ParameterFinder</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>componentParameterFinder</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">QSharedPointer&lt; <a class="el" href="classExpressionFormatter.html">ExpressionFormatter</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>expressionFormatter</em></span>, </td>
+          <td class="paramtype">QSharedPointer&lt; <a class="el" href="classExpressionFormatter.html">ExpressionFormatter</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>componentExpressionFormatter</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">QSharedPointer&lt; <a class="el" href="classExpressionParser.html">ExpressionParser</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>expressionParser</em></span>, </td>
+          <td class="paramtype">QSharedPointer&lt; <a class="el" href="classExpressionParser.html">ExpressionParser</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>componentParameterParser</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QSharedPointer&lt; <a class="el" href="classListFinder.html">ListFinder</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>absDefFinder</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QSharedPointer&lt; <a class="el" href="classExpressionParser.html">ExpressionParser</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>absDefParser</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -164,9 +174,11 @@ Functions</h2></td></tr>
 <p>Create the interface for accessing bus interfaces.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">parameterFinder</td><td>The parameter finder. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">expressionFormatter</td><td>Formatter for expressions. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">expressionParser</td><td>Parser for expressions. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">componentParameterFinder</td><td>The parameter finder. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">componentExpressionFormatter</td><td>Formatter for expressions. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">componentParameterParser</td><td>Parser for expressions. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">absDefFinder</td><td>Parameter finder for abstraction definition expressions. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">absDefParser</td><td>Parser for abstraction definition expressions. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">component</td><td>The containing component. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">library</td><td>Interface for accessing the library.</td></tr>
   </table>

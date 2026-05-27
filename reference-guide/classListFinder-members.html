@@ -79,7 +79,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('classListParameterFinder.html',''); initResizable(true); });
+$(function(){initNavTree('classListFinder.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -105,25 +105,21 @@ $(function(){initNavTree('classListParameterFinder.html',''); initResizable(true
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">ListParameterFinder Member List</div></div>
+  <div class="headertitle"><div class="title">ListFinder Member List</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="classListParameterFinder.html">ListParameterFinder</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="classListFinder.html">ListFinder</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classListParameterFinder.html#ac59992c260c45ec0a5bd8ff605322d61">getAllParameterIds</a>() const override</td><td class="entry"><a class="el" href="classListParameterFinder.html">ListParameterFinder</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classListParameterFinder.html#ade825b38e63212c6528e815ad6c837e3">getNumberOfParameters</a>() const noexcept override</td><td class="entry"><a class="el" href="classListParameterFinder.html">ListParameterFinder</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classListParameterFinder.html#a677c306e38d1f49023ea038f7bd79448">getParameterWithID</a>(QStringView parameterId) const override</td><td class="entry"><a class="el" href="classListParameterFinder.html">ListParameterFinder</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classListParameterFinder.html#a3e6e48cd09496eeca3cd890fd2de3a75">hasId</a>(QStringView id) const override</td><td class="entry"><a class="el" href="classListParameterFinder.html">ListParameterFinder</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classListParameterFinder.html#aef4737c7a629b12fd3799136562552cb">ListParameterFinder</a>()</td><td class="entry"><a class="el" href="classListParameterFinder.html">ListParameterFinder</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classListParameterFinder.html#ab2c13d0469cbb303f2d0bcb863c838fc">ListParameterFinder</a>(const ListParameterFinder &amp;other)=delete</td><td class="entry"><a class="el" href="classListParameterFinder.html">ListParameterFinder</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classListParameterFinder.html#ac504046d29fa1c03a4224084f7369d81">nameForId</a>(QStringView id) const override</td><td class="entry"><a class="el" href="classListParameterFinder.html">ListParameterFinder</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classListParameterFinder.html#ae6e6238c806afaf74f2a0a5f2fced8d8">operator=</a>(const ListParameterFinder &amp;other)=delete</td><td class="entry"><a class="el" href="classListParameterFinder.html">ListParameterFinder</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classListParameterFinder.html#a8d74bcd784ac5d8de56f6acd21cdbe5f">registerParameterModel</a>(QAbstractItemModel const *model) final</td><td class="entry"><a class="el" href="classListParameterFinder.html">ListParameterFinder</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classListParameterFinder.html#a5d20cdf9c9448a62463886a91759600a">setParameterList</a>(QSharedPointer&lt; QList&lt; QSharedPointer&lt; Parameter &gt; &gt; &gt; parameterList) noexcept</td><td class="entry"><a class="el" href="classListParameterFinder.html">ListParameterFinder</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classListParameterFinder.html#a3f358a752178b556917768c45985eafd">valueForId</a>(QStringView id) const override</td><td class="entry"><a class="el" href="classListParameterFinder.html">ListParameterFinder</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classListFinder.html#ab7dc658044714ece4707020b55a736be">~ListFinder</a>() override=default</td><td class="entry"><a class="el" href="classListFinder.html">ListFinder</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classListParameterFinder.html#a2cb01777abdae9b4e7f2952c63cc3af1">~ListParameterFinder</a>() override=default</td><td class="entry"><a class="el" href="classListParameterFinder.html">ListParameterFinder</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParameterFinder.html#a35d9d6aa89452edfb7d2cfa391c82500">getAllParameterIds</a>() const =0</td><td class="entry"><a class="el" href="classParameterFinder.html">ParameterFinder</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classParameterFinder.html#ac4e0dd07725550aba0c8cc22ea99c21b">getNumberOfParameters</a>() const =0</td><td class="entry"><a class="el" href="classParameterFinder.html">ParameterFinder</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParameterFinder.html#aa4919a6c34322b9b20302e16850feedb">getParameterWithID</a>(QStringView parameterId) const =0</td><td class="entry"><a class="el" href="classParameterFinder.html">ParameterFinder</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classParameterFinder.html#a1234b32d888c87248817684b6a5dd140">hasId</a>(QStringView id) const =0</td><td class="entry"><a class="el" href="classParameterFinder.html">ParameterFinder</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParameterFinder.html#a100dc1383072d3b315081ba52b3f01d0">nameForId</a>(QStringView id) const =0</td><td class="entry"><a class="el" href="classParameterFinder.html">ParameterFinder</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classParameterFinder.html#a04b91da66e1d30e26ca648fb57576df5">registerParameterModel</a>(QAbstractItemModel const *model)=0</td><td class="entry"><a class="el" href="classParameterFinder.html">ParameterFinder</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classListFinder.html#a3ae3fe082df964d41457c8b8aaf50518">setParameterList</a>(QSharedPointer&lt; QList&lt; QSharedPointer&lt; Parameter &gt; &gt; &gt; parameterList)=0</td><td class="entry"><a class="el" href="classListFinder.html">ListFinder</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classParameterFinder.html#a863e0ada1670edfbf82086cba0188ae6">valueForId</a>(QStringView id) const =0</td><td class="entry"><a class="el" href="classParameterFinder.html">ParameterFinder</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classListFinder.html#ab7dc658044714ece4707020b55a736be">~ListFinder</a>() override=default</td><td class="entry"><a class="el" href="classListFinder.html">ListFinder</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classParameterFinder.html#a34e3ee0ce191e2b2f0554e99c9fdf903">~ParameterFinder</a>()=default</td><td class="entry"><a class="el" href="classParameterFinder.html">ParameterFinder</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
