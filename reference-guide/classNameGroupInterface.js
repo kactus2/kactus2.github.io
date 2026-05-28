@@ -6,6 +6,7 @@ var classNameGroupInterface =
     [ "getDescription", "classNameGroupInterface.html#ad7e8c8266850f17b7282651cf5dbab4e", null ],
     [ "getDisplayName", "classNameGroupInterface.html#ace095fc6bf1b105edc57ce843e8e9409", null ],
     [ "getIndexedItemName", "classNameGroupInterface.html#a665de09fd20a1ee11627ccbf158ed661", null ],
+    [ "getItem", "classNameGroupInterface.html#a23f13a976bdf24ec759dabea1a74367c", null ],
     [ "getItemIndex", "classNameGroupInterface.html#abe3d623424f60e264af918743283272e", null ],
     [ "getShortDescription", "classNameGroupInterface.html#a83c92fe189bd6cc411e44963c1586ff6", null ],
     [ "itemHasValidName", "classNameGroupInterface.html#a3edf2b9cd442ab315d4e0862e1874477", null ],

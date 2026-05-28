@@ -15,10 +15,17 @@ var hierarchy =
           [ "ParametersInterface", "classParametersInterface.html", null ]
         ] ],
         [ "AdHocConnectionInterface", "classAdHocConnectionInterface.html", null ],
+        [ "ArrayableMemoryInterface", "classArrayableMemoryInterface.html", [
+          [ "FieldInterface", "classFieldInterface.html", null ],
+          [ "MemoryBlockInterface", "classMemoryBlockInterface.html", [
+            [ "AddressBlockInterface", "classAddressBlockInterface.html", null ],
+            [ "SubspaceMapInterface", "classSubspaceMapInterface.html", null ]
+          ] ],
+          [ "RegisterInterface", "classRegisterInterface.html", null ]
+        ] ],
         [ "BusInterfaceInterface", "classBusInterfaceInterface.html", null ],
         [ "ComponentInstanceInterface", "classComponentInstanceInterface.html", null ],
         [ "ComponentInstantiationInterface", "classComponentInstantiationInterface.html", null ],
-        [ "FieldInterface", "classFieldInterface.html", null ],
         [ "FileInterface", "classFileInterface.html", null ],
         [ "FileSetInterface", "classFileSetInterface.html", null ],
         [ "InterconnectionInterface", "classInterconnectionInterface.html", null ],
@@ -26,12 +33,7 @@ var hierarchy =
           [ "PortAbstractionInterface", "classPortAbstractionInterface.html", null ],
           [ "PortsInterface", "classPortsInterface.html", null ]
         ] ],
-        [ "MemoryBlockInterface", "classMemoryBlockInterface.html", [
-          [ "AddressBlockInterface", "classAddressBlockInterface.html", null ],
-          [ "SubspaceMapInterface", "classSubspaceMapInterface.html", null ]
-        ] ],
-        [ "MemoryMapInterface", "classMemoryMapInterface.html", null ],
-        [ "RegisterInterface", "classRegisterInterface.html", null ]
+        [ "MemoryMapInterface", "classMemoryMapInterface.html", null ]
       ] ],
       [ "PortMapInterface", "classPortMapInterface.html", null ],
       [ "ResetInterface", "classResetInterface.html", null ],
@@ -115,18 +117,16 @@ var hierarchy =
     ] ],
     [ "ParameterizableInterface", "classParameterizableInterface.html", [
       [ "AbstractParameterInterface", "classAbstractParameterInterface.html", null ],
+      [ "ArrayableMemoryInterface", "classArrayableMemoryInterface.html", null ],
       [ "BusInterfaceInterface", "classBusInterfaceInterface.html", null ],
       [ "ComponentInstantiationInterface", "classComponentInstantiationInterface.html", null ],
-      [ "FieldInterface", "classFieldInterface.html", null ],
       [ "FileBuilderInterface", "classFileBuilderInterface.html", null ],
       [ "FileInterface", "classFileInterface.html", null ],
       [ "FileSetInterface", "classFileSetInterface.html", null ],
-      [ "MemoryBlockInterface", "classMemoryBlockInterface.html", null ],
       [ "MemoryMapInterface", "classMemoryMapInterface.html", null ],
       [ "PortAbstractionInterface", "classPortAbstractionInterface.html", null ],
       [ "PortMapInterface", "classPortMapInterface.html", null ],
       [ "PortsInterface", "classPortsInterface.html", null ],
-      [ "RegisterInterface", "classRegisterInterface.html", null ],
       [ "ResetInterface", "classResetInterface.html", null ],
       [ "TransparentBridgeInterface", "classTransparentBridgeInterface.html", null ]
     ] ],

@@ -7,5 +7,6 @@ var searchData=
   ['addressblockinterface_4',['AddressBlockInterface',['../classAddressBlockInterface.html',1,'']]],
   ['addresspair_5',['AddressPair',['../structInterconnectGeneration_1_1AddressPair.html',1,'InterconnectGeneration']]],
   ['addressspaceexpressiongatherer_6',['AddressSpaceExpressionGatherer',['../classAddressSpaceExpressionGatherer.html',1,'']]],
-  ['adhocconnectioninterface_7',['AdHocConnectionInterface',['../classAdHocConnectionInterface.html',1,'']]]
+  ['adhocconnectioninterface_7',['AdHocConnectionInterface',['../classAdHocConnectionInterface.html',1,'']]],
+  ['arrayablememoryinterface_8',['ArrayableMemoryInterface',['../classArrayableMemoryInterface.html',1,'']]]
 ];

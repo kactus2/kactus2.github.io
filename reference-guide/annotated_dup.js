@@ -27,6 +27,7 @@ var annotated_dup =
     [ "AddressBlockInterface", "classAddressBlockInterface.html", "classAddressBlockInterface" ],
     [ "AddressSpaceExpressionGatherer", "classAddressSpaceExpressionGatherer.html", "classAddressSpaceExpressionGatherer" ],
     [ "AdHocConnectionInterface", "classAdHocConnectionInterface.html", "classAdHocConnectionInterface" ],
+    [ "ArrayableMemoryInterface", "classArrayableMemoryInterface.html", "classArrayableMemoryInterface" ],
     [ "BusInterfaceInterface", "classBusInterfaceInterface.html", "classBusInterfaceInterface" ],
     [ "ChannelRelay", "classChannelRelay.html", "classChannelRelay" ],
     [ "CLIGenerator", "classCLIGenerator.html", "classCLIGenerator" ],

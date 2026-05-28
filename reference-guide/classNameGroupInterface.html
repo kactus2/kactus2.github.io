@@ -107,6 +107,7 @@ $(function(){initNavTree('classNameGroupInterface.html',''); initResizable(true)
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classNameGroupInterface-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">NameGroupInterface Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
@@ -125,17 +126,15 @@ Inheritance diagram for NameGroupInterface:</div>
 <area href="classCommonInterface.html" title="Common functions for interfaces." alt="CommonInterface" shape="rect" coords="0,0,191,24"/>
 <area href="classAbstractParameterInterface.html" title="Interface for editing parameters." alt="AbstractParameterInterface" shape="rect" coords="201,112,392,136"/>
 <area href="classAdHocConnectionInterface.html" title="Interface for accessing design ad hoc connections." alt="AdHocConnectionInterface" shape="rect" coords="201,168,392,192"/>
-<area href="classBusInterfaceInterface.html" title="Interface for accessing bus interfaces." alt="BusInterfaceInterface" shape="rect" coords="201,224,392,248"/>
-<area href="classComponentInstanceInterface.html" title="Interface for accessing component instances." alt="ComponentInstanceInterface" shape="rect" coords="201,280,392,304"/>
-<area href="classComponentInstantiationInterface.html" title="Interface for editing component instantiations." alt="ComponentInstantiationInterface" shape="rect" coords="201,336,392,360"/>
-<area href="classFieldInterface.html" title="Interface for editing fields." alt="FieldInterface" shape="rect" coords="201,392,392,416"/>
+<area href="classArrayableMemoryInterface.html" alt="ArrayableMemoryInterface" shape="rect" coords="201,224,392,248"/>
+<area href="classBusInterfaceInterface.html" title="Interface for accessing bus interfaces." alt="BusInterfaceInterface" shape="rect" coords="201,280,392,304"/>
+<area href="classComponentInstanceInterface.html" title="Interface for accessing component instances." alt="ComponentInstanceInterface" shape="rect" coords="201,336,392,360"/>
+<area href="classComponentInstantiationInterface.html" title="Interface for editing component instantiations." alt="ComponentInstantiationInterface" shape="rect" coords="201,392,392,416"/>
 <area href="classFileInterface.html" title="Interface for editing files." alt="FileInterface" shape="rect" coords="201,448,392,472"/>
 <area href="classFileSetInterface.html" title="Interface for editing filesets." alt="FileSetInterface" shape="rect" coords="201,504,392,528"/>
 <area href="classInterconnectionInterface.html" title="Interface for accessing design interconnections." alt="InterconnectionInterface" shape="rect" coords="201,560,392,584"/>
 <area href="classMasterPortInterface.html" title="Master interface for editing component ports and port abstractions." alt="MasterPortInterface" shape="rect" coords="201,616,392,640"/>
-<area href="classMemoryBlockInterface.html" title="Parent interface for editing memory blocks." alt="MemoryBlockInterface" shape="rect" coords="201,672,392,696"/>
-<area href="classMemoryMapInterface.html" title="Interface for editing memory maps and remaps." alt="MemoryMapInterface" shape="rect" coords="201,728,392,752"/>
-<area href="classRegisterInterface.html" title="Interface for editing registers." alt="RegisterInterface" shape="rect" coords="201,784,392,808"/>
+<area href="classMemoryMapInterface.html" title="Interface for editing memory maps and remaps." alt="MemoryMapInterface" shape="rect" coords="201,672,392,696"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -187,8 +186,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a58ae1ba5bbb280690af5a2799209d350 inherit pub_methods_classCommonInterface" id="r_a58ae1ba5bbb280690af5a2799209d350"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCommonInterface.html#a58ae1ba5bbb280690af5a2799209d350">validateItems</a> () const =0</td></tr>
 <tr class="separator:a58ae1ba5bbb280690af5a2799209d350 inherit pub_methods_classCommonInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a23f13a976bdf24ec759dabea1a74367c" id="r_a23f13a976bdf24ec759dabea1a74367c"><td class="memItemLeft" align="right" valign="top">virtual QSharedPointer&lt; NameGroup &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23f13a976bdf24ec759dabea1a74367c">getItem</a> (std::string const &amp;itemName) const =0</td></tr>
+<tr class="separator:a23f13a976bdf24ec759dabea1a74367c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classCommonInterface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classCommonInterface')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classCommonInterface.html">CommonInterface</a></td></tr>
 <tr class="memitem:a4b092d2bd5c36598b48678fc733f281e inherit pro_methods_classCommonInterface" id="r_a4b092d2bd5c36598b48678fc733f281e"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCommonInterface.html#a4b092d2bd5c36598b48678fc733f281e">getUniqueName</a> (std::string const &amp;newName, std::string const &amp;itemTypeName) const</td></tr>
 <tr class="separator:a4b092d2bd5c36598b48678fc733f281e inherit pro_methods_classCommonInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -374,6 +375,41 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Name of the selected item. </dd></dl>
 
 <p>Implemented in <a class="el" href="classAdHocConnectionInterface.html#ac301ccd82c86a3d2ffeaef773a4bf448">AdHocConnectionInterface</a>, <a class="el" href="classBusInterfaceInterface.html#a45c18d3e68ea7408f88b6a2132052359">BusInterfaceInterface</a>, <a class="el" href="classComponentInstanceInterface.html#a38d9b246df225019e9301992c52265fd">ComponentInstanceInterface</a>, <a class="el" href="classComponentInstantiationInterface.html#afbff1a7bd8e6e62ea3ad449823e9d8f4">ComponentInstantiationInterface</a>, <a class="el" href="classFieldInterface.html#aa146596a766996db4b2d3cd25bc99e98">FieldInterface</a>, <a class="el" href="classFileInterface.html#a7776ae722b7320196ae7f14d75ef5be3">FileInterface</a>, <a class="el" href="classFileSetInterface.html#ac8f2ab25f2350eee1c7572723d400056">FileSetInterface</a>, <a class="el" href="classInterconnectionInterface.html#ac927cafe37d2e01216307c8d37af0aa4">InterconnectionInterface</a>, <a class="el" href="classMemoryBlockInterface.html#a4a1fc6de0ad4b269f59ea84a106735c7">MemoryBlockInterface</a>, <a class="el" href="classMemoryMapInterface.html#a826a75c7e55661ef7bd688541fc7bdaf">MemoryMapInterface</a>, <a class="el" href="classModuleParameterInterface.html#a2e241fcca136341a2a98566c6eb60c54">ModuleParameterInterface</a>, <a class="el" href="classParametersInterface.html#ab49a5f387211719f2e97432469b4b650">ParametersInterface</a>, <a class="el" href="classPortAbstractionInterface.html#a7ca1894c9ccc6f6774cc6d85dd2b786d">PortAbstractionInterface</a>, <a class="el" href="classPortsInterface.html#a1ed64d3f10d01d61efd74d1b6f880e04">PortsInterface</a>, and <a class="el" href="classRegisterInterface.html#a3285763cffc074091165fdb0b39ec292">RegisterInterface</a>.</p>
+
+</div>
+</div>
+<a id="a23f13a976bdf24ec759dabea1a74367c" name="a23f13a976bdf24ec759dabea1a74367c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f13a976bdf24ec759dabea1a74367c">&#9670;&#160;</a></span>getItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QSharedPointer&lt; NameGroup &gt; NameGroupInterface::getItem </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;</td>          <td class="paramname"><span class="paramname"><em>itemName</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the item with the selected name, sliced to a NameGroup.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">itemName</td><td>Name of the selected item.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sliced item with the selected name. </dd></dl>
+
+<p>Implemented in <a class="el" href="classPortsInterface.html#a573238d60b594f711aebb99e012246b8">PortsInterface</a>.</p>
 
 </div>
 </div>

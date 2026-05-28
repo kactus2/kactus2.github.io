@@ -7,6 +7,7 @@ var dir_f3a0803c3f588ecc94a51bb427d54d1e =
     [ "AddressBlockInterface.h", "AddressBlockInterface_8h.html", "AddressBlockInterface_8h" ],
     [ "AddressSpaceExpressionsGatherer.h", "AddressSpaceExpressionsGatherer_8h.html", "AddressSpaceExpressionsGatherer_8h" ],
     [ "AdHocConnectionInterface.h", "AdHocConnectionInterface_8h.html", "AdHocConnectionInterface_8h" ],
+    [ "ArrayableMemoryInterface.h", "ArrayableMemoryInterface_8h.html", "ArrayableMemoryInterface_8h" ],
     [ "BusInterfaceInterface.h", "BusInterfaceInterface_8h.html", "BusInterfaceInterface_8h" ],
     [ "BusInterfaceInterfaceFactory.h", "BusInterfaceInterfaceFactory_8h.html", "BusInterfaceInterfaceFactory_8h" ],
     [ "BusInterfaceUtilities.h", "BusInterfaceUtilities_8h.html", "BusInterfaceUtilities_8h" ],
