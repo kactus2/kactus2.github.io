@@ -179,6 +179,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa1df0f013608aa1745fd64d43ae3d81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf925432fc0e9dd5ef78e385a66f8378" id="r_acf925432fc0e9dd5ef78e385a66f8378"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf925432fc0e9dd5ef78e385a66f8378">getResolve</a> (std::string const &amp;parameterName) const</td></tr>
 <tr class="separator:acf925432fc0e9dd5ef78e385a66f8378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa76063c80d1bb578fc55496de4212f9" id="r_afa76063c80d1bb578fc55496de4212f9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa76063c80d1bb578fc55496de4212f9">getSign</a> (std::string const &amp;parameterName) const</td></tr>
+<tr class="separator:afa76063c80d1bb578fc55496de4212f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6623ef6196ba0506c4dd2b0b0b9474b" id="r_ae6623ef6196ba0506c4dd2b0b0b9474b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6623ef6196ba0506c4dd2b0b0b9474b">getType</a> (std::string const &amp;parameterName) const</td></tr>
 <tr class="separator:ae6623ef6196ba0506c4dd2b0b0b9474b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a810df72cdea313cff230d9762620008f" id="r_a810df72cdea313cff230d9762620008f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a810df72cdea313cff230d9762620008f">getUsageCount</a> (std::string const &amp;parameterName) const</td></tr>
@@ -237,6 +239,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3615421f7a3cae95d187cc751f4c91cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87f27f213ead5a6ffe2d4aaa357864db" id="r_a87f27f213ead5a6ffe2d4aaa357864db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87f27f213ead5a6ffe2d4aaa357864db">setResolve</a> (std::string const &amp;parameterName, std::string const &amp;newResolve)</td></tr>
 <tr class="separator:a87f27f213ead5a6ffe2d4aaa357864db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a373608ef864207ade9776135cf1b5983" id="r_a373608ef864207ade9776135cf1b5983"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a373608ef864207ade9776135cf1b5983">setSign</a> (std::string const &amp;parameterName, std::string const &amp;newSign)</td></tr>
+<tr class="separator:a373608ef864207ade9776135cf1b5983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a382786a126786c43f65aa4466a2ea7c8" id="r_a382786a126786c43f65aa4466a2ea7c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a382786a126786c43f65aa4466a2ea7c8">setType</a> (std::string const &amp;parameterName, std::string const &amp;newType)</td></tr>
 <tr class="separator:a382786a126786c43f65aa4466a2ea7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaf1ad04b995cfcf33e494884bcb6f31" id="r_abaf1ad04b995cfcf33e494884bcb6f31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abaf1ad04b995cfcf33e494884bcb6f31">setUsageCount</a> (std::string const &amp;parameterName, int const &amp;newUsageCount)</td></tr>
@@ -948,6 +952,31 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Resolve of the selected parameter. </dd></dl>
+
+</div>
+</div>
+<a id="afa76063c80d1bb578fc55496de4212f9" name="afa76063c80d1bb578fc55496de4212f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa76063c80d1bb578fc55496de4212f9">&#9670;&#160;</a></span>getSign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string AbstractParameterInterface::getSign </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;</td>          <td class="paramname"><span class="paramname"><em>parameterName</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the sign of the selected parameter.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">parameterName</td><td>Name of the selected parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Sign of the selected parameter. </dd></dl>
 
 </div>
 </div>
@@ -1748,6 +1777,36 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">parameterName</td><td>Name of the selected parameter. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">newResolve</td><td>New resolve.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True, if successful, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a373608ef864207ade9776135cf1b5983" name="a373608ef864207ade9776135cf1b5983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a373608ef864207ade9776135cf1b5983">&#9670;&#160;</a></span>setSign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AbstractParameterInterface::setSign </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;</td>          <td class="paramname"><span class="paramname"><em>parameterName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string const &amp;</td>          <td class="paramname"><span class="paramname"><em>newSign</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the sign of the selected parameter.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">parameterName</td><td>Name of the selected parameter. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newSign</td><td>New sign for the parameter.</td></tr>
   </table>
   </dd>
 </dl>
