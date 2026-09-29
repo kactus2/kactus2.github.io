@@ -41,5 +41,6 @@ var searchData=
   ['format_38',['format',['../classExpressionFormatter.html#a2632492e6b0425866d76574368dd3a21',1,'ExpressionFormatter']]],
   ['formatreferringexpression_39',['formatReferringExpression',['../classExpressionFormatter.html#af1df118a68bd30bb9ded52281a072d23',1,'ExpressionFormatter']]],
   ['formattedvaluefor_40',['formattedValueFor',['../classParameterizableInterface.html#ac3a7a34745afb2f80e1a769c6bdcff0e',1,'ParameterizableInterface']]],
-  ['function_5fhighlight_41',['FUNCTION_HIGHLIGHT',['../namespaceKactusColors.html#a38a35c2dbf4fe9b65f31cac0a73fbdfb',1,'KactusColors']]]
+  ['from_20design_41',['Practical example: Generating top-level RTL from design',['../examples.html#autotoc_md13',1,'']]],
+  ['function_5fhighlight_42',['FUNCTION_HIGHLIGHT',['../namespaceKactusColors.html#a38a35c2dbf4fe9b65f31cac0a73fbdfb',1,'KactusColors']]]
 ];

@@ -91,7 +91,8 @@ var searchData=
   ['row_5fseparator_88',['ROW_SEPARATOR',['../namespaceKactusColors.html#ac5c594b3bda976cbf917141ef7076daf',1,'KactusColors']]],
   ['rowcount_89',['rowCount',['../classHierarchyModelBase.html#a032240991d4ac3e37cba749112dccc7a',1,'HierarchyModelBase::rowCount()'],['../classLibraryModel.html#af6837f9231e5004559301f81e982de8a',1,'LibraryModel::rowCount()']]],
   ['rstvlnv_90',['rstVLNV',['../structInterconnectGeneration_1_1ConfigStruct.html#aebfabe896560b91e0e29cefcbd87496a',1,'InterconnectGeneration::ConfigStruct']]],
-  ['run_91',['run',['../classImportRunner.html#a148221241255eea356ae52825c9c9575',1,'ImportRunner']]],
-  ['runfile_92',['runFile',['../classPythonInterpreter.html#aa775c83512592cc4c82007ca0b9efcdb',1,'PythonInterpreter']]],
-  ['rungenerator_93',['runGenerator',['../classCLIGenerator.html#a35b12150e045c76b8eb7ae70e497eb1c',1,'CLIGenerator::runGenerator()'],['../classIGeneratorPlugin.html#a14a5fd11109ee5b1cc46909e773ef5f5',1,'IGeneratorPlugin::runGenerator()']]]
+  ['rtl_20from_20design_91',['Practical example: Generating top-level RTL from design',['../examples.html#autotoc_md13',1,'']]],
+  ['run_92',['run',['../classImportRunner.html#a148221241255eea356ae52825c9c9575',1,'ImportRunner']]],
+  ['runfile_93',['runFile',['../classPythonInterpreter.html#aa775c83512592cc4c82007ca0b9efcdb',1,'PythonInterpreter']]],
+  ['rungenerator_94',['runGenerator',['../classCLIGenerator.html#a35b12150e045c76b8eb7ae70e497eb1c',1,'CLIGenerator::runGenerator()'],['../classIGeneratorPlugin.html#a14a5fd11109ee5b1cc46909e773ef5f5',1,'IGeneratorPlugin::runGenerator()']]]
 ];
